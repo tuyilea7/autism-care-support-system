@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import ChatWindow from "./components/ChatWindow.jsx";
 import InputBar from "./components/InputBar.jsx";
-import Dashboard from "./components/Dashboard.jsx";
 import AuthPage from "./components/AuthPage.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import AdminPanel from "./components/AdminPanel.jsx";
@@ -22,9 +21,7 @@ export default function App() {
   const [messages, setMessages]           = useState([]);
   const [loading, setLoading]             = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [activeTab, setActiveTab]         = useState("chat");
 
-  const bottomRef = useRef(null);
   const chatAreaRef = useRef(null);
 
   // ── helpers ──────────────────────────────────────────────
@@ -82,7 +79,6 @@ export default function App() {
       setSessions((prev) => [sess, ...prev]);
       setActiveSessionId(sess.session_id);
       setMessages([WELCOME_MSG(user)]);
-      setActiveTab("chat");
     } catch { /* ignore */ }
   };
 
@@ -90,7 +86,6 @@ export default function App() {
   const handleSelectSession = async (sid) => {
     if (sid === activeSessionId) return;
     setActiveSessionId(sid);
-    setActiveTab("chat");
     setLoading(true);
     try {
       const res = await fetch(`/api/sessions/${sid}/messages`, { headers: authH() });
@@ -222,17 +217,6 @@ export default function App() {
             </div>
           </div>
 
-          <nav className="header-nav" aria-label="Main navigation">
-            <button
-              className={`nav-tab ${activeTab === "chat" ? "nav-tab-active" : ""}`}
-              onClick={() => setActiveTab("chat")}
-            >💬 Chat</button>
-            <button
-              className={`nav-tab ${activeTab === "dashboard" ? "nav-tab-active" : ""}`}
-              onClick={() => setActiveTab("dashboard")}
-            >📊 Dashboard</button>
-          </nav>
-
           <div className="header-right">
             <span className="user-greeting">👤 {user.full_name.split(" ")[0]}</span>
             <button className="logout-btn" onClick={logout}>Sign Out</button>
@@ -240,11 +224,7 @@ export default function App() {
         </header>
 
         {/* Body */}
-        {activeTab === "dashboard" ? (
-          <main className="dash-area">
-            <Dashboard token={token} onUnauth={logout} />
-          </main>
-        ) : noSessionSelected ? (
+        {noSessionSelected ? (
           /* Empty state — no session picked yet */
           <main className="empty-state">
             <div className="empty-inner">
