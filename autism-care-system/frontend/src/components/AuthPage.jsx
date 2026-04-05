@@ -60,21 +60,8 @@ export default function AuthPage({ onAuth }) {
           <h1 className="auth-logo-title">Autism Care Support</h1>
         </div>
 
-        {/* Tabs */}
-        <div className="auth-tabs">
-          <button
-            className={`auth-tab ${mode === "login" ? "auth-tab-active" : ""}`}
-            onClick={() => { setMode("login"); setError(""); }}
-          >
-            Sign In
-          </button>
-          <button
-            className={`auth-tab ${mode === "register" ? "auth-tab-active" : ""}`}
-            onClick={() => { setMode("register"); setError(""); }}
-          >
-            Register
-          </button>
-        </div>
+        {/* Title based on mode */}
+        <h2 className="auth-title">{mode === "login" ? "Sign In" : "Create Account"}</h2>
 
         <form className="auth-form" onSubmit={submit} noValidate>
           {mode === "register" && (
