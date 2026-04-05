@@ -33,7 +33,17 @@ export default function AuthPage({ onAuth }) {
       });
       const data = await res.json();
       if (!res.ok) { setError(data.error || "Something went wrong"); return; }
-      onAuth(data.token, data.user);
+      
+      // If registration, switch to login mode instead of auto-login
+      if (mode === "register") {
+        setMode("login");
+        setForm({ full_name: "", email: form.email, password: "", child_name: "" });
+        setError(""); // Clear any errors
+        alert("Account created successfully! Please sign in with your credentials.");
+      } else {
+        // If login, authenticate the user
+        onAuth(data.token, data.user);
+      }
     } catch {
       setError("Cannot connect to server. Make sure the backend is running.");
     } finally {
