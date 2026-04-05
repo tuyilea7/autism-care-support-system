@@ -33,6 +33,38 @@ class AutismCareBot:
         embeddings = self.model.encode(all_patterns, convert_to_numpy=True)
         return embeddings, pattern_map
 
+    def _select_best_response(self, responses: list, user_message: str) -> str:
+        """Always prefer the structured Rwandan step-by-step response when available."""
+
+        # Tier 1: Full Rwandan professional step-by-step (has both Step markers AND local language)
+        tier1 = [
+            r for r in responses
+            if ('Step 1' in r or 'Step 1' in r) and
+               any(m in r for m in ['Uhorere', 'ndi kumwe', 'district hospital', 'health center', '114'])
+        ]
+        if tier1:
+            return tier1[0]
+
+        # Tier 2: Any structured step-by-step response
+        tier2 = [r for r in responses if 'Step 1' in r]
+        if tier2:
+            return tier2[0]
+
+        # Tier 3: Rwandan professional voice (kitenge, local items, Rwanda orgs)
+        tier3 = [
+            r for r in responses
+            if any(m in r for m in [
+                'What Rwandan caregivers do', 'Rwandan home', 'district hospital',
+                'health center', 'Autism Rwanda', '114', 'kitenge', 'Uhorere',
+                'ndi kumwe', 'umudugudu', 'Mutuelle', 'ubushera', 'lesu'
+            ])
+        ]
+        if tier3:
+            return tier3[0]
+
+        # Fallback: random
+        return random.choice(responses)
+
     def get_response(self, user_message: str) -> dict:
         """Match user message to best intent and return a response."""
         query_embedding = self.model.encode([user_message], convert_to_numpy=True)
@@ -42,14 +74,14 @@ class AutismCareBot:
         best_score = float(similarities[best_idx])
 
         # Confidence threshold — fall back if too low
-        THRESHOLD = 0.35
+        THRESHOLD = 0.30
         if best_score < THRESHOLD:
             fallback = next(i for i in self.intents if i["tag"] == "fallback")
-            response = random.choice(fallback["responses"])
+            response = self._select_best_response(fallback["responses"], user_message)
             tag = "fallback"
         else:
             matched = self.pattern_map[best_idx]
-            response = random.choice(matched["responses"])
+            response = self._select_best_response(matched["responses"], user_message)
             tag = matched["tag"]
 
         return {

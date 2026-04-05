@@ -1,19 +1,28 @@
 import { useState } from "react";
 
+function toMidnight(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
+
 function groupByDate(sessions) {
+  const order = ["Today", "Yesterday", "This Week", "Older"];
   const groups = { Today: [], Yesterday: [], "This Week": [], Older: [] };
-  const now = new Date();
+  const todayMidnight = toMidnight(new Date());
 
   sessions.forEach((s) => {
-    const d = new Date(s.updated_at + "Z");
-    const diffDays = Math.floor((now - d) / 86400000);
-    if (diffDays < 1) groups["Today"].push(s);
-    else if (diffDays < 2) groups["Yesterday"].push(s);
-    else if (diffDays < 7) groups["This Week"].push(s);
-    else groups["Older"].push(s);
+    // handle both "2024-01-01T00:00:00" and "2024-01-01 00:00:00" from SQLite
+    const raw = s.updated_at.includes("T") ? s.updated_at : s.updated_at.replace(" ", "T");
+    const d = new Date(raw.endsWith("Z") ? raw : raw + "Z");
+    const sessionMidnight = toMidnight(d);
+    const diffDays = Math.round((todayMidnight - sessionMidnight) / 86400000);
+
+    if (diffDays === 0)      groups["Today"].push(s);
+    else if (diffDays === 1) groups["Yesterday"].push(s);
+    else if (diffDays < 7)  groups["This Week"].push(s);
+    else                     groups["Older"].push(s);
   });
 
-  return groups;
+  return { groups, order };
 }
 
 export default function Sidebar({
@@ -34,7 +43,7 @@ export default function Sidebar({
     setRenamingId(null);
   };
 
-  const grouped = groupByDate(sessions);
+  const { groups: grouped, order: groupOrder } = groupByDate(sessions);
 
   return (
     <aside className={`sidebar ${collapsed ? "sidebar-collapsed" : ""}`} aria-label="Chat history">
@@ -56,11 +65,11 @@ export default function Sidebar({
             <p className="sidebar-empty">No conversations yet.<br />Start a new chat!</p>
           )}
 
-          {Object.entries(grouped).map(([label, items]) =>
-            items.length === 0 ? null : (
+          {groupOrder.map((label) =>
+            grouped[label].length === 0 ? null : (
               <div key={label} className="sidebar-group">
                 <p className="sidebar-group-label">{label}</p>
-                {items.map((s) => (
+                {grouped[label].map((s) => (
                   <div
                     key={s.session_id}
                     className={`sidebar-item ${s.session_id === activeSessionId ? "sidebar-item-active" : ""}`}

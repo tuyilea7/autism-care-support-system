@@ -110,7 +110,18 @@ def _user_dict(user):
         "email": user["email"],
         "child_name": user["child_name"],
         "child_age": user["child_age"],
+        "role": user["role"] if "role" in user.keys() else "parent",
     }
+
+def require_admin():
+    """Returns (user_row, error_response). If error_response is not None, return it."""
+    user_id = get_jwt_identity()
+    db = get_db()
+    user = db.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
+    db.close()
+    if not user or user["role"] != "admin":
+        return None, (jsonify({"error": "Admin access required"}), 403)
+    return user, None
 
 
 # ════════════════════════════════════════════════════════════
@@ -364,6 +375,130 @@ def dashboard():
         })
     finally:
         db.close()
+
+
+# ════════════════════════════════════════════════════════════
+#  ADMIN ROUTES
+# ════════════════════════════════════════════════════════════
+
+@app.route("/api/admin/users", methods=["GET"])
+@jwt_required()
+def admin_list_users():
+    _, err = require_admin()
+    if err: return err
+    db = get_db()
+    try:
+        rows = db.execute(
+            "SELECT id, full_name, email, child_name, child_age, role, created_at FROM users WHERE role != 'admin' ORDER BY created_at DESC"
+        ).fetchall()
+        result = []
+        for r in rows:
+            msg_count = db.execute(
+                "SELECT COUNT(*) FROM conversations WHERE user_id = ? AND role = 'user'", (r["id"],)
+            ).fetchone()[0]
+            session_count = db.execute(
+                "SELECT COUNT(*) FROM sessions WHERE user_id = ?", (r["id"],)
+            ).fetchone()[0]
+            result.append({
+                "id": r["id"],
+                "full_name": r["full_name"],
+                "email": r["email"],
+                "child_name": r["child_name"],
+                "child_age": r["child_age"],
+                "role": r["role"],
+                "created_at": r["created_at"],
+                "total_messages": msg_count,
+                "total_sessions": session_count,
+            })
+        return jsonify(result)
+    finally:
+        db.close()
+
+
+@app.route("/api/admin/users/<int:uid>/messages", methods=["GET"])
+@jwt_required()
+def admin_user_messages(uid):
+    _, err = require_admin()
+    if err: return err
+    db = get_db()
+    try:
+        sessions = db.execute(
+            "SELECT session_id, title, updated_at FROM sessions WHERE user_id = ? ORDER BY updated_at DESC",
+            (uid,)
+        ).fetchall()
+        result = []
+        for s in sessions:
+            msgs = db.execute(
+                "SELECT role, message, tag, timestamp FROM conversations WHERE session_id = ? ORDER BY id",
+                (s["session_id"],)
+            ).fetchall()
+            result.append({
+                "session_id": s["session_id"],
+                "title": s["title"],
+                "updated_at": s["updated_at"],
+                "messages": [dict(m) for m in msgs],
+            })
+        return jsonify(result)
+    finally:
+        db.close()
+
+
+@app.route("/api/admin/stats", methods=["GET"])
+@jwt_required()
+def admin_stats():
+    _, err = require_admin()
+    if err: return err
+    db = get_db()
+    try:
+        total_parents = db.execute("SELECT COUNT(*) FROM users WHERE role = 'parent'").fetchone()[0]
+        total_sessions = db.execute("SELECT COUNT(*) FROM sessions").fetchone()[0]
+        total_messages = db.execute("SELECT COUNT(*) FROM conversations WHERE role = 'user'").fetchone()[0]
+        top_topics = db.execute(
+            "SELECT tag, COUNT(*) as cnt FROM conversations WHERE role = 'bot' AND tag IS NOT NULL AND tag != 'fallback' GROUP BY tag ORDER BY cnt DESC LIMIT 8"
+        ).fetchall()
+        return jsonify({
+            "total_parents": total_parents,
+            "total_sessions": total_sessions,
+            "total_messages": total_messages,
+            "top_topics": [{"topic": r["tag"].replace("_", " ").title(), "count": r["cnt"]} for r in top_topics],
+        })
+    finally:
+        db.close()
+
+
+@app.route("/api/admin/dataset", methods=["GET"])
+@jwt_required()
+def admin_get_dataset():
+    _, err = require_admin()
+    if err: return err
+    import json
+    with open(DATA_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return jsonify(data["intents"])
+
+
+@app.route("/api/admin/dataset/<tag>", methods=["PUT"])
+@jwt_required()
+def admin_update_intent(tag):
+    _, err = require_admin()
+    if err: return err
+    import json
+    body = request.get_json(silent=True) or {}
+    with open(DATA_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    intents = data["intents"]
+    idx = next((i for i, x in enumerate(intents) if x["tag"] == tag), None)
+    if idx is None:
+        return jsonify({"error": "Tag not found"}), 404
+    if "patterns" in body:
+        intents[idx]["patterns"] = body["patterns"]
+    if "responses" in body:
+        intents[idx]["responses"] = body["responses"]
+    with open(DATA_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    # Reload bot
+    bot.__init__(DATA_PATH)
+    return jsonify({"ok": True, "tag": tag})
 
 
 @app.route("/api/health", methods=["GET"])

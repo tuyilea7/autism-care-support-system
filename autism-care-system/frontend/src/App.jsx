@@ -4,6 +4,7 @@ import InputBar from "./components/InputBar.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import AuthPage from "./components/AuthPage.jsx";
 import Sidebar from "./components/Sidebar.jsx";
+import AdminPanel from "./components/AdminPanel.jsx";
 
 const WELCOME_MSG = (user) => ({
   role: "bot",
@@ -24,6 +25,7 @@ export default function App() {
   const [activeTab, setActiveTab]         = useState("chat");
 
   const bottomRef = useRef(null);
+  const chatAreaRef = useRef(null);
 
   // ── helpers ──────────────────────────────────────────────
   const authH = () => ({
@@ -32,8 +34,14 @@ export default function App() {
   });
 
   // ── scroll to bottom ─────────────────────────────────────
+  const scrollToBottom = (smooth = true) => {
+    if (chatAreaRef.current) {
+      chatAreaRef.current.scrollTop = chatAreaRef.current.scrollHeight;
+    }
+  };
+
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    scrollToBottom(true);
   }, [messages]);
 
   // ── load sessions on login ────────────────────────────────
@@ -89,6 +97,8 @@ export default function App() {
       if (res.status === 401) { logout(); return; }
       const data = await res.json();
       setMessages(data.length ? data : [WELCOME_MSG(user)]);
+      // scroll after messages are set
+      setTimeout(() => scrollToBottom(), 50);
     } catch {
       setMessages([WELCOME_MSG(user)]);
     } finally {
@@ -158,6 +168,32 @@ export default function App() {
   // ── not logged in ─────────────────────────────────────────
   if (!token || !user) return <AuthPage onAuth={handleAuth} />;
 
+  // ── admin gets their own panel ────────────────────────────
+  if (user.role === "admin") {
+    return (
+      <div className="app-shell">
+        <div className="main-panel">
+          <header className="app-header">
+            <div className="header-left">
+              <span className="header-icon" aria-hidden="true">💙</span>
+              <div>
+                <h1 className="header-title">Autism Care — Admin</h1>
+                <p className="header-subtitle">System management panel</p>
+              </div>
+            </div>
+            <div className="header-right">
+              <span className="user-greeting">🛡️ {user.full_name.split(" ")[0]}</span>
+              <button className="logout-btn" onClick={logout}>Sign Out</button>
+            </div>
+          </header>
+          <main className="dash-area">
+            <AdminPanel token={token} onUnauth={logout} />
+          </main>
+        </div>
+      </div>
+    );
+  }
+
   const noSessionSelected = !activeSessionId;
 
   return (
@@ -222,9 +258,8 @@ export default function App() {
           </main>
         ) : (
           <>
-            <main className="chat-area">
+            <main className="chat-area" ref={chatAreaRef}>
               <ChatWindow messages={messages} loading={loading} />
-              <div ref={bottomRef} />
             </main>
             <footer className="input-area">
               <InputBar onSend={sendMessage} disabled={loading} />

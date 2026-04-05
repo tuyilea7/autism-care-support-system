@@ -1,6 +1,31 @@
 {
   "intents": [
     {
+      "tag": "rwandan_professional_voice",
+      "patterns": [
+        "who are you",
+        "what is this chatbot",
+        "are you a doctor",
+        "can I trust you",
+        "is this real advice",
+        "where do you get your information",
+        "are you Rwandan",
+        "do you understand our situation",
+        "we don't have those things here",
+        "I live in a village",
+        "no money for therapy",
+        "no doctors near me",
+        "I need Rwandan advice",
+        "help me like a Rwandan caregiver would",
+        "speak to me as Rwandan professional"
+      ],
+      "responses": [
+        "I am not a doctor. I am a guidance tool created using advice from Rwandan autism professionals, parents, and organizations like Autism Rwanda and NCPD. I will give you the same steps a Rwandan caregiver would tell you if they were sitting beside you in your home. I will use things you already have - kitenge, traditional blankets, local foods, your nearest health center. You can trust this advice, but always take your child to a doctor if you see danger signs like not breathing, severe injury, or seizures.",
+        "Think of me as a helpful neighbor who has trained with Rwandan autism specialists. I will not give you Western advice that doesn't work here. I will tell you: turn off the radio, use a kitenge for deep pressure, go to your district hospital, call 114 in an emergency. You are not alone. Many Rwandan parents are walking this same path.",
+        "I am here to speak clearly and practically. No complicated words. No shame. No blame. Just steps you can try today with what you have in your home. If I suggest something you don't have, tell me and I will give you a different way. Your child is not cursed. You are not failing. Let me help."
+      ]
+    },
+    {
       "tag": "greeting",
       "patterns": [
         "hello",
@@ -25,11 +50,11 @@
         "got a minute"
       ],
       "responses": [
-        "Hello! I'm here to support you on your autism care journey. What would you like to know today?",
-        "Hi there! How can I help you? I'm ready to listen and assist with any concerns you have.",
-        "Welcome! You're not alone - I'm here to provide guidance and practical strategies. What's on your mind?",
-        "Hello! It takes courage to seek guidance. I'm here to provide information and support. How can I assist you right now?",
-        "Good day! Every question you ask helps you better understand your child. What shall we explore together?"
+        "Hello. I am here to help you. You have come to the right place. What is happening with your child today?",
+        "Welcome. You are not alone in this. Many Rwandan parents are asking the same questions you are asking. Tell me what is going on and I will help you step by step.",
+        "Hello. It takes courage to ask for help. I am here. Tell me what your child is doing and we will figure out what to do together.",
+        "Good day. You are a good parent for seeking guidance. Let us talk. What is your biggest worry about your child right now?",
+        "Hello. I will speak to you plainly, like a neighbor who understands autism. No complicated words. No shame. What do you need help with today?"
       ]
     },
     {
@@ -52,11 +77,11 @@
         "have a good day"
       ],
       "responses": [
-        "You're very welcome! Remember, you're doing an amazing job as a caregiver. Come back anytime you need support.",
-        "I'm so glad I could help! You're not alone in this journey. Feel free to return whenever you have questions.",
-        "Thank you for reaching out! Your dedication to your child is inspiring. Take care and come back soon.",
-        "You're welcome! Small steps lead to big progress. Celebrate your victories, no matter how small.",
-        "It was my pleasure to help. Remember to take care of yourself too. You deserve rest and support."
+        "You are welcome. You are doing something important by seeking help. Come back any time you have questions. You are not alone.",
+        "I am glad I could help. Remember: small steps every day. You do not need to fix everything at once. Rest when you can. Come back tomorrow.",
+        "Thank you for trusting me with your questions. Your child is lucky to have a parent who cares this much. Take care of yourself too.",
+        "You are welcome. Keep going. It is hard, but you are not failing. Come back whenever you need guidance.",
+        "Go well. You have taken a good step today. Rest, eat, and come back when you need more help. You are not alone in this."
       ]
     },
     {
@@ -101,9 +126,45 @@
         "route changed meltdown",
         "unexpected visitor panic",
         "fire alarm meltdown",
-        "birthday party overwhelm"
+        "birthday party overwhelm",
+        "she is screaming",
+        "he is screaming",
+        "my child is screaming",
+        "screaming non stop",
+        "screaming and crying",
+        "won't stop screaming",
+        "screaming how can i calm her",
+        "screaming how can i calm him",
+        "how can i calm her",
+        "how can i calm him",
+        "how do i calm my child",
+        "child is crying and screaming",
+        "she won't calm down",
+        "he won't calm down",
+        "child is out of control right now",
+        "what do i do right now",
+        "she is having a meltdown",
+        "he is having a meltdown",
+        "child is melting down",
+        "she is overwhelmed",
+        "he is overwhelmed",
+        "child is very upset",
+        "she is very upset right now",
+        "child is on the floor screaming",
+        "rolling on floor crying",
+        "screaming for no reason",
+        "screaming since morning",
+        "can't stop the screaming",
+        "nothing calms her",
+        "nothing calms him",
+        "she is crying uncontrollably",
+        "he is crying uncontrollably",
+        "child is hysterical",
+        "she is hysterical",
+        "he is hysterical"
       ],
       "responses": [
+        "Hello. I understand this is very hard for you. Your daughter is not being stubborn - she is overwhelmed. Let me give you steps that work in a Rwandan home.\n\nStep 1 - Do this first (30 seconds):\n- Breathe deeply twice\n- Do not shout or ask questions. She cannot answer right now\n\nStep 2 - Check these common triggers (quickly):\n- Turn off the radio or TV\n- Move her away from bright sunlight or a flickering bulb\n- Feel her clothes - if rough or wet, change her into soft cotton or a clean lesu\n- Offer a small sip of water or a bite of banana/rice\n\nStep 3 - Calm her without words:\n- Sit nearby on the floor at her level\n- Hum a slow, repetitive tune or say softly: 'Uhorere... ndi kumwe nawe.' (Be calm... I am with you.)\n- If she allows it, place a folded blanket on her lap for gentle pressure\n- Do not force eye contact or a hug\n\nStep 4 - When to stop and stay quiet:\n- If she keeps screaming, stop talking completely\n- Sit quietly beside her. Rock your own body slowly. She may copy you\n- Wait. This can take 10-20 minutes\n\nStep 5 - After she calms down:\n- Leave water nearby\n- Sit in silence for 5 more minutes\n- Do not praise or hug immediately. Wait until she is fully settled\n\nWhen to see a doctor in Rwanda:\n- Screaming lasts more than 2 hours daily\n- She hurts herself (biting, head-banging)\n- You suspect pain like an ear infection or stomach problem\n- Contact Autism Rwanda or your nearest district hospital for help\n\nYou are not alone.",
         "**Immediate Action:** Stay calm - your regulated nervous system helps co-regulate your child. **Steps:** 1) Reduce noise (turn off TV, ask siblings to be quiet), 2) Dim lights, 3) Ensure safety (remove dangerous objects), 4) Use minimal words: 'I'm here' and 'You're safe.' **Explanation:** During meltdown, brain is in survival mode - reasoning won't work. **Follow-up:** After calm, offer comfort without discussion. They need recovery time.",
         "**Step-by-Step Safety Protocol:** 1) Scan area for dangers (sharp corners, breakable items), 2) Place pillow between child's head and hard surfaces if head-banging, 3) Create physical space, 4) Block access to stairs/doors. **Stay nearby** but don't touch unless they seek comfort. **Remember:** This WILL pass. Breathe deeply yourself. **Rwanda home adaptation:** In small homes, move siblings to adjacent room with trusted adult, use mattresses/blankets to create soft barrier, open windows/door to reduce feeling of confinement.",
         "**Calming Technique - Deep Pressure:** If your child responds well to deep pressure: 1) Apply firm bear hugs (if they allow), 2) Use weighted blanket across shoulders, 3) Squeeze shoulders firmly but gently, 4) Try 'sandwich' technique with pillows. **Alternative:** Some prefer NO touch during meltdowns - respect this. **After:** Offer water and quiet rest. **Rwanda alternatives:** Wrap child snugly in kitenge fabric (traditional cloth provides deep pressure), use heavy traditional blankets, firm massage with locally available oils (coconut, shea butter).",
@@ -120,10 +181,12 @@
         "**Medication/Sleep Connection:** Overtired children meltdown more. **Check:** 1) Consistent bedtime/wake time, 2) No screens 1 hour before bed, 3) Dark, cool room, 4) Consider melatonin (consult doctor). **Also review:** Medication timing - some cause irritability as they wear off.",
         "**Co-Regulation Script:** During meltdown say CALMLY: 1) 'I see you're really upset' (validation), 2) 'I'm here with you' (presence), 3) 'You're safe' (reassurance), 4) 'We'll get through this' (hope). **Tone matters more than words.** Soft, slow, low voice. **Your body language:** Relaxed posture, open palms, non-threatening stance.",
         "**Red Flags Requiring Immediate Intervention:** 1) Blue lips or breath-holding until passing out, 2) Head-banging causing injury, 3) Aggression with weapons, 4) Suicidal statements, 5) Seizure activity. **Call emergency services** if: Unconscious, not breathing, severe injury. **Have crisis plan ready** for known severe behaviors.",
-        "**Environmental Modifications:** Reduce common triggers: 1) Fluorescent lights \u00e2\u2020\u2019 lamps with warm bulbs, 2) Background noise \u00e2\u2020\u2019 white noise machine or quiet times, 3) Clothing tags/seams \u00e2\u2020\u2019 remove or buy seamless, 4) Food smells \u00e2\u2020\u2019 ventilate kitchen, 5) Visual clutter \u00e2\u2020\u2019 organized, minimal decorations. **Observe:** What does YOUR child react to?",
+        "**Environmental Modifications:** Reduce common triggers: 1) Fluorescent lights â†’ lamps with warm bulbs, 2) Background noise â†’ white noise machine or quiet times, 3) Clothing tags/seams â†’ remove or buy seamless, 4) Food smells â†’ ventilate kitchen, 5) Visual clutter â†’ organized, minimal decorations. **Observe:** What does YOUR child react to?",
         "**Transition Warnings System:** Unexpected changes trigger meltdowns. **Use:** 1) '5 minutes' warning with timer, 2) '2 minutes' reminder, 3) '1 minute, then we stop,' 4) Visual countdown. **If resistance:** 'I know you want more time. We can do this again tomorrow.' **Validate feeling, maintain boundary.**",
         "**Meltdown vs. Tantrum Distinction:** Tantrum = goal-oriented (wants candy), stops when gets it. Meltdown = neurological overwhelm, continues regardless of consequences. **Response differs:** Tantrums need consistent boundaries. Meltdowns need co-regulation and safety. **Your child isn't manipulative** - they're overwhelmed.",
-        "**Long-Term Skill Building:** When calm (not during meltdown): 1) Name emotions: 'You felt angry/frustrated/overwhelmed,' 2) Teach replacement: 'Next time, squeeze ball/stomp feet/tell me,' 3) Practice coping: Deep breathing, counting to 10, going to calm space, 4) Social stories about handling big feelings. **Progress takes months** - celebrate small wins."
+        "**Long-Term Skill Building:** When calm (not during meltdown): 1) Name emotions: 'You felt angry/frustrated/overwhelmed,' 2) Teach replacement: 'Next time, squeeze ball/stomp feet/tell me,' 3) Practice coping: Deep breathing, counting to 10, going to calm space, 4) Social stories about handling big feelings. **Progress takes months** - celebrate small wins.",
+        "**What Rwandan caregivers do during a meltdown:** First, breathe. Your child feels your fear. Second, turn off the radio and TV. Ask others to speak softly or leave the room. Third, if the room is bright, move your child to a shadier spot or cover the window with a cloth. Fourth, sit on the floor near your child - not too close, not too far. Say nothing except 'I am here' in a soft voice. Do not shout 'Cehura!' - this makes it worse. Wait. This can take 10, 20, even 30 minutes. You are not failing. Meltdowns end. After they calm, offer water and quiet. Do not talk about what happened until much later.",
+        "Take a deep breath. Your child feels what you feel. If you panic, they panic more. Turn off the radio. Ask others to leave the room or speak softly. Sit near your child on the floor. Say only: 'I am here.' Wait. Do not touch unless they want to be touched. Do not explain or lecture. Just wait. The meltdown will end. You are not failing. This is what autism looks like sometimes."
       ]
     },
     {
@@ -167,16 +230,46 @@
         "drawing blood scratches",
         "bruising from attacks",
         "property thrown at people",
-        "spit in eye incident"
+        "spit in eye incident",
+        "she is hitting me",
+        "he is hitting me",
+        "child is hitting me",
+        "she is biting me",
+        "he is biting me",
+        "child is biting me",
+        "she is kicking me",
+        "he is kicking me",
+        "child is kicking me",
+        "she is attacking me",
+        "he is attacking me",
+        "child is attacking me",
+        "she is violent",
+        "he is violent",
+        "child is being violent",
+        "she hit her sibling",
+        "he hit his sibling",
+        "child hit sibling",
+        "she is aggressive",
+        "he is aggressive",
+        "child is aggressive right now",
+        "she is hurting others",
+        "he is hurting others",
+        "child is hitting and biting",
+        "she is hitting and biting",
+        "she is scratching me",
+        "he is scratching me",
+        "child is out of control hitting",
+        "she is out of control"
       ],
       "responses": [
+        "I understand this is scary. Your child is not a bad child - they are overwhelmed and do not have words for what they feel. Let me give you steps for right now.\n\nStep 1 - Protect everyone immediately:\n- Move other children and pets out of the room\n- Step back yourself - give your child space\n- Do not hit back. Hitting teaches hitting.\n\nStep 2 - Say one thing only:\n- In a low, calm voice say: 'Hands down.'\n- Say it once. Do not repeat it many times.\n- Do not lecture, explain, or ask questions right now\n\nStep 3 - Create space and wait:\n- If they are trying to hurt you, step back further\n- Do not chase or corner them\n- Stand nearby but do not crowd them\n- Wait for the storm to pass\n\nStep 4 - After they calm down:\n- Do not punish or lecture immediately - they cannot learn during or right after anger\n- Offer water quietly\n- Sit together in silence\n\nStep 5 - Later, when fully calm, find the trigger:\n- What happened just before? Being told no? A change? Hunger? Pain?\n- If aggression is new or getting worse, go to the health center\n- They may have pain they cannot tell you about - ear infection, toothache, stomach problems\n\nWhen to call 114 or go to the health center:\n- Someone is seriously hurt\n- You cannot keep yourself or other children safe\n- Aggression is happening every day and getting worse\n\nYou are not alone. Contact Autism Rwanda for support: +250 788 386 185",
         "**IMMEDIATE SAFETY:** 1) Remove victim (especially siblings/pets) from area, 2) Create physical space, 3) Stay calm - don't show fear/anger, 4) Use minimal language: 'Hands are not for hitting.' **Explanation:** Aggression often communicates unmet need (pain, frustration, sensory overload). **Follow-up:** Once calm, identify trigger and teach replacement behavior.",
         "**Step-by-Step De-escalation:** 1) Neutral facial expression (don't glare), 2) Hands visible and open (non-threatening), 3) Speak softly/slowly, 4) Offer alternative: 'You can hit this pillow instead,' 5) Redirect to different activity. **Why:** Showing emotion can reinforce behavior. Calm consistency teaches better ways.",
         "**Functional Communication Training:** Teach replacement for aggression: 1) Sign/picture/word for 'help' when frustrated, 2) 'Break' when overwhelmed, 3) 'Stop' when uncomfortable, 4) 'Hurt' when in pain. **Practice daily** when calm. **Reinforce immediately** when they use communication instead of hitting.",
         "**ABC Analysis Method:** Track: **A**ntecedent (what happened BEFORE), **B**ehavior (specific: 'hit with fist'), **C**onsequence (what happened AFTER). **Example:** A=Asked to clean up, B=Hit mom, C=Task removed. **Pattern:** Aggression escapes demands. **Solution:** Make tasks easier, provide help, reinforce compliance.",
         "**Medical Rule-Out Checklist:** Schedule doctor visit if aggression is NEW or WORSENING. Check: 1) Pain sources (teeth, ears, abdomen, headaches), 2) Constipation/GI distress (very common in autism), 3) Sleep deprivation, 4) Seizure activity, 5) Medication side effects, 6) Allergies causing discomfort. **Many children aggress because they CAN'T verbalize pain.**",
         "**Sensory Diet for Aggression:** If aggression is sensory-seeking: 1) Scheduled heavy work every 2 hours (wall push-ups, carrying groceries, jumping), 2) Chewelry/oral motor toys for biting urges, 3) Weighted vest/lap pad, 4) Crash pad for safe falling. **Consult OT** for personalized sensory plan. **Prevents** buildup leading to aggression.",
-        "**Safety Plan for Severe Aggression:** 1) Identify safe room for siblings, 2) Have crisis contact numbers posted, 3) Know nearest exit routes, 4) Keep phone accessible, 5) Consider protective equipment (if biting/scratching severe), 6) Train all caregivers on same protocol. **When to call 911:** Weapons involved, loss of consciousness, suicidal/homicidal statements. **Have plan BEFORE crisis.**",
+        "**Safety Plan for Severe Aggression:** 1) Identify safe room for siblings, 2) Have crisis contact numbers posted, 3) Know nearest exit routes, 4) Keep phone accessible, 5) Consider protective equipment (if biting/scratching severe), 6) Train all caregivers on same protocol. **When to call 114 (Rwanda emergency):** Weapons involved, loss of consciousness, suicidal/homicidal statements. **Have plan BEFORE crisis.**",
         "**Replacement Behavior Teaching:** When calm, practice: 1) Squeezing stress ball when angry, 2) Stomping feet instead of kicking, 3) Hitting pillow/punching bag, 4) Tearing old magazines, 5) Screaming into pillow. **Make it visual:** Show pictures of options. **Prompt BEFORE aggression:** 'You seem frustrated. Do you need your stress ball?' **Praise:** 'Great job using your words!'",
         "**Environmental Modifications:** Reduce triggers: 1) Clear pathways (less tripping/overstimulation), 2) Secure breakables, 3) Provide personal space (tape on floor showing 'your area'), 4) Reduce crowding (limit number of people in room), 5) Lower noise levels, 6) Predictable routines. **For Rwanda context:** Even small homes can create quiet corner with curtain/barrier. Use locally available materials: kitenge fabric for visual barriers, banana leaves for outdoor calm space, traditional baskets for organizing calming items.",
         "**Positive Reinforcement System:** Catch them NOT being aggressive: 1) Praise specific: 'I love how you used gentle hands with sister!' 2) Token economy: Earn star for each hour without hitting, 3) Reward chart: 5 stars = special activity, 4) Immediate reinforcement (don't delay). **Ratio:** 4 positives for every correction. **Attention follows behavior** - give attention to positive behaviors.",
@@ -189,7 +282,8 @@
         "**Progress Tracking:** Measure: 1) Frequency (how many incidents/week), 2) Intensity (1-10 scale), 3) Duration (how long episode lasts), 4) Recovery time. **Graph it** - visual progress motivates. **Expect:** Two steps forward, one back. Bad days don't erase progress. **Celebrate:** One less incident, shorter duration, quicker recovery. **Small wins matter.**",
         "**Professional Support Team:** Build team: 1) BCBA for behavior plan, 2) OT for sensory needs, 3) SLP for communication, 4) Psychologist for parent training/child therapy, 5) Developmental pediatrician for medical oversight, 6) School team for IEP/BIP. **Coordinate:** Regular team meetings, shared data. **You are CEO** of this team. **Trust your instincts** - if something feels wrong, seek second opinion.",
         "**Understanding Function of Behavior:** Aggression serves purpose: 1) Escape (avoiding task/person), 2) Attention (getting reaction), 3) Tangible (accessing item/activity), 4) Sensory (feels good/calming). **Observe pattern:** What happens RIGHT AFTER aggression? That's usually the function. **Match intervention to function:** Can't use same strategy for escape vs. attention-seeking.",
-        "**Crisis Prevention Plan:** Create written document including: 1) Early warning signs (pacing, clenched fists, louder voice), 2) Effective calming strategies (specific to YOUR child), 3) Ineffective strategies (what makes worse), 4) Emergency contacts, 5) Medical information, 6) Preferred hospital if needed. **Share with:** School, grandparents, babysitters, neighbors. **Review quarterly** and update."
+        "**Crisis Prevention Plan:** Create written document including: 1) Early warning signs (pacing, clenched fists, louder voice), 2) Effective calming strategies (specific to YOUR child), 3) Ineffective strategies (what makes worse), 4) Emergency contacts, 5) Medical information, 6) Preferred hospital if needed. **Share with:** School, grandparents, babysitters, neighbors. **Review quarterly** and update.",
+        "**What Rwandan caregivers do when a child hits:** First, move other children and pets away. Your safety and theirs comes first. Second, do not hit back. Hitting teaches hitting. Third, speak only one sentence: 'Hands down.' Say it in a low, calm voice. Fourth, if your child is trying to hurt you, step back. Create space. Fifth, after they stop, do not lecture. They cannot learn during anger. Later, when calm, practice: 'Next time you are angry, squeeze this cloth or stomp your feet.' If aggression is new or getting worse, take your child to the health center. They may have pain they cannot tell you about - ear infection, toothache, or stomach problems."
       ]
     },
     {
@@ -214,9 +308,38 @@
         "why does my child hurt themselves",
         "stop self-injurious behavior",
         "SIB self-injury autism",
-        "dangerous to themselves"
+        "dangerous to themselves",
+        "she is biting herself",
+        "he is biting himself",
+        "child is biting themselves",
+        "she is hitting herself",
+        "he is hitting himself",
+        "child is hitting themselves",
+        "she is scratching herself",
+        "he is scratching himself",
+        "she is hurting herself",
+        "he is hurting himself",
+        "child is hurting themselves",
+        "she is banging her head",
+        "he is banging his head",
+        "child banging head",
+        "she is pulling her hair",
+        "he is pulling his hair",
+        "biting herself how can i calm her",
+        "biting himself how can i calm him",
+        "she is biting herself how can calm her",
+        "child biting own hand",
+        "she is hitting her head",
+        "he is hitting his head",
+        "child is injuring themselves",
+        "she is hurting herself what do i do",
+        "she is scratching her face",
+        "he is scratching his face",
+        "child is bleeding from scratching",
+        "she bit herself until bleeding"
       ],
       "responses": [
+        "Hello. I can hear how frightened you are. Your child is not doing this to hurt you - they are in distress and cannot tell you with words. Let me help you right now.\n\nStep 1 - Keep them safe (do this immediately):\n- Put something soft between their head and any hard surface - a folded blanket, pillow, or even folded clothes\n- Move them away from walls, corners, and hard furniture\n- Do not hold their arms tightly - this can make them fight harder and hurt themselves more\n\nStep 2 - Stay calm and close:\n- Sit near them on the floor - not too close, not too far\n- Do not shout or ask questions. They cannot answer right now\n- Say softly only: 'Ndi kumwe nawe.' (I am with you.)\n- Do not try to stop the behavior by force\n\nStep 3 - Look for hidden pain:\n- Many children hurt themselves because of pain they cannot tell you about\n- After they calm down, check: mouth for swollen gums or sore teeth, ears for redness or discharge, stomach for hardness or bloating\n- If you find signs of pain, go to the health center\n\nStep 4 - After they stop:\n- Offer water quietly\n- Sit together in silence\n- Do not talk about what happened yet\n\nWhen to go to the health center in Rwanda:\n- Wounds that are bleeding or deep\n- You suspect pain (ear, teeth, stomach)\n- This is happening every day or getting worse\n- Say to the nurse: 'My child cannot speak. Please check for pain.'\n\nYou are not failing. This is distress, not bad behavior. You are doing the right thing by seeking help.",
         "**IMMEDIATE SAFETY:** 1) Place soft barrier between head and hard surfaces (pillow, folded blanket), 2) Remove sharp/dangerous objects nearby, 3) If severe, consider protective helmet (consult doctor), 4) Stay calm - your panic can escalate. **Explanation:** Self-injury often communicates overwhelming emotion, pain, or sensory need. **Not manipulation** - it's distress.",
         "**Medical Evaluation URGENT:** Schedule appointment immediately if self-injury is NEW or WORSENING. Check: 1) Dental pain/tooth abscess (common cause of head-hitting), 2) Ear infections, 3) GI distress/constipation, 4) Headaches/migraines, 5) Seizure activity, 6) Medication side effects. **Many children hit head/body because they CAN'T verbalize where pain is.** Rule out medical causes FIRST.",
         "**Functional Assessment:** Track ABCs: Antecedent (before), Behavior (specific self-injury), Consequence (after). **Patterns reveal function:** 1) Escape demands? 2) Get attention? 3) Access tangibles? 4) Sensory stimulation? 5) Communicate pain? **Match intervention to function.** Example: If escapes tasks -> make tasks easier, provide help, reinforce completion.",
@@ -235,8 +358,10 @@
         "**Parent Self-Care & Trauma:** Witnessing your child self-injure is traumatic. 1) Acknowledge your emotional response (terror, grief, helplessness), 2) Therapy for YOU is essential, 3) Connect with other parents who understand, 4) Respite care prevents burnout, 5) Remember: This is not forever - many children outgrow self-injury with proper support. **You matter too.**",
         "**School Collaboration:** If self-injury at school: 1) Include in IEP/BIP, 2) Train all staff on protocol, 3) Daily communication home, 4) Same strategies both settings, 5) Request 1:1 aide if severe, 6) Consider reduced day if overwhelming. **You're entitled to** functional assessment through school. **Don't accept** 'just ignore it' - safety first.",
         "**Long-Term Outlook:** With comprehensive intervention, most children significantly reduce or eliminate self-injury. **Key factors:** Early intervention, consistent approach across environments, addressing root cause (not just behavior), teaching replacement skills. **Progress isn't linear** - expect setbacks during stress, illness, transitions. **Stay committed** - improvement possible.",
-        "**Emergency Red Flags:** Call 911 or go to ER if: 1) Loss of consciousness, 2) Deep wounds requiring stitches, 3) Suspected broken bones, 4) Eye injury, 5) Seizure activity, 6) Suicidal statements (in verbal children). **Have crisis plan ready:** Nearest hospital with psychiatric services, crisis hotline numbers, respite providers for emergency placement.",
-        "**Hope & Success Stories:** Many autistic adults report childhood self-injury that resolved with: 1) Improved communication (AAC, sign language), 2) Medication for co-occurring conditions, 3) Learning self-advocacy, 4) Finding accepting community, 5) Developing coping strategies. **Your child's current behavior doesn't predict future.** With support, healing happens."
+        "**Emergency Red Flags:** Call 114 or go to the nearest health center/hospital if: 1) Loss of consciousness, 2) Deep wounds requiring stitches, 3) Suspected broken bones, 4) Eye injury, 5) Seizure activity, 6) Suicidal statements (in verbal children). **Have crisis plan ready:** Nearest hospital with psychiatric services, crisis hotline numbers, respite providers for emergency placement.",
+        "**Hope & Success Stories:** Many autistic adults report childhood self-injury that resolved with: 1) Improved communication (AAC, sign language), 2) Medication for co-occurring conditions, 3) Learning self-advocacy, 4) Finding accepting community, 5) Developing coping strategies. **Your child's current behavior doesn't predict future.** With support, healing happens.",
+        "**Rwanda Adaptation:** If your child is hitting their head, use a folded kitenge cloth as a soft barrier. Remove hard surfaces nearby. Sit close and hum softly to offer co-regulation. If wounds occur, go to the nearest health center. Call 114 for emergencies. Contact Autism Rwanda for guidance: +250 788 386 185.",
+        "**What Rwandan caregivers do when a child hurts themselves:** This is very serious. Do not ignore it. First, put something soft between their head and the wall or floor - a folded blanket, pillow, even folded clothes. Second, do not hold their arms tightly unless you are trained. This can make them fight harder. Third, after they stop, check their mouth for swollen gums, their ears for redness, their stomach for hardness. Many children hit their head because they have pain they cannot tell you about. Take them to the health center. Say: 'My child cannot speak. Please check for pain.' This is not bad behavior. This is distress."
       ]
     },
     {
@@ -261,9 +386,36 @@
         "destroys during meltdowns",
         "property damage increasing",
         "expensive items being broken",
-        "home looks war zone"
+        "home looks war zone",
+        "she is breaking things",
+        "he is breaking things",
+        "child is breaking things",
+        "she is throwing things",
+        "he is throwing things",
+        "child is throwing things",
+        "she is destroying things",
+        "he is destroying things",
+        "she is breaking things how can i calm her",
+        "she is braking things how can i calm her",
+        "child is smashing things",
+        "she is smashing things",
+        "she threw something",
+        "he threw something",
+        "child broke a window",
+        "she broke the plates",
+        "he is kicking the wall",
+        "she is kicking the wall",
+        "child is destroying the house",
+        "she is throwing furniture",
+        "he is throwing furniture",
+        "child is throwing objects",
+        "she is ripping things",
+        "he is ripping things",
+        "child is breaking toys",
+        "she broke her toys again"
       ],
       "responses": [
+        "I understand this is frightening and exhausting. Your child is not doing this to destroy your home - they are overwhelmed and do not have words for what they feel. Let me give you steps.\n\nStep 1 - Protect people first (do this now):\n- Move other children and pets out of the room\n- Step back yourself - give your child space\n- Do not try to grab things from their hands right now\n\nStep 2 - Remove what matters:\n- Quickly and quietly move breakable or dangerous items out of reach\n- Use plastic or metal cups and plates in future - remove glass and clay from their reach permanently\n- Do not lecture or shout while doing this\n\nStep 3 - Stay quiet and wait:\n- Do not try to stop them with words right now - they cannot hear you\n- Stand nearby but say nothing\n- When they pause, say calmly in a low voice: 'I am here. You are safe.'\n- Wait for the storm to pass\n\nStep 4 - After they calm down:\n- Do not punish or lecture immediately\n- Offer water and sit quietly together\n- Later, when fully calm, offer a safe alternative: a pillow to squeeze, a drum to hit, a cloth to tear\n\nStep 5 - Find the trigger:\n- What happened just before? A change in routine? Loud noise? Being told no?\n- Write it down. Patterns help you prevent the next time\n\nWhen to get help in Rwanda:\n- Destruction is happening every day\n- Someone is getting hurt\n- Contact Autism Rwanda or your district hospital for a behavior assessment\n\nYou are not alone. This can get better.",
         "Property destruction often signals overwhelming emotions your child can't express. Validate feelings: 'I see you're really angry.' Then redirect: 'You can break this cardboard box instead.'",
         "Remove valuable/breakable items from reach. Create a 'destruction zone' with old magazines to tear, cardboard to smash, pillows to throw. This provides safe outlets for big emotions.",
         "Teach what NOT to break vs. what CAN be destroyed: 'Walls no, play-doh yes.' 'TV no, old boxes yes.' Make it concrete and visual. Practice repeatedly when calm.",
@@ -271,7 +423,8 @@
         "Understand the function: Is destruction gaining attention? Escaping demands? Accessing tangibles? Sensory seeking? The 'why' determines the intervention strategy.",
         "Use natural consequences appropriately: 'You broke your tablet, so no more screen time today.' 'You ripped the game, so we can't play it.' Connect action to outcome logically.",
         "If destruction happens during meltdowns, focus on prevention and safety. During calm periods, teach emotional regulation skills and appropriate expression of anger.",
-        "Document damage with photos for insurance, medical records, or IEP meetings showing severity. This data supports service requests and safety planning."
+        "Document damage with photos for insurance, medical records, or IEP meetings showing severity. This data supports service requests and safety planning.",
+        "**Rwanda Adaptation:** Remove fragile items like clay pots or glass from the child's reach. Use plastic or metal cups and plates. Identify the trigger (frustration, sensory overload, transition) and address the cause. Offer a safe alternative like a pillow to squeeze or a drum to hit."
       ]
     },
     {
@@ -306,7 +459,8 @@
         "Build in transition warnings: '5 minutes until clean-up.' '2 minutes left.' '1 minute, then we start.' Use timers visually. Unexpected transitions trigger refusal.",
         "Examine your ratio of demands to positives. Aim for 4:1 positive interactions for every correction/refusal. Children refuse less when connection is strong.",
         "Pick your battles. Let go of low-priority issues to save energy for non-negotiables (safety, health, respect). Can they wear pajamas all day? Maybe that's okay.",
-        "If refusal is pervasive and impacting quality of life, consider Pathological Demand Avoidance (PDA) profile. PDA requires specialized approaches focusing on indirect requests and collaboration."
+        "If refusal is pervasive and impacting quality of life, consider Pathological Demand Avoidance (PDA) profile. PDA requires specialized approaches focusing on indirect requests and collaboration.",
+        "**Rwanda Adaptation:** Offer limited choices using objects, not just words (show the cup vs. the plate). Use a visual schedule drawn on paper. Avoid power struggles in front of others, which can increase shame for the family. Community health workers can help mediate if family conflict arises around the child's behavior."
       ]
     },
     {
@@ -343,7 +497,8 @@
         "Video modeling shows appropriate social behavior. Watch shows depicting friendship, pause and discuss: 'How could he be a better friend?' 'What would you say?'",
         "Quality over quantity matters. One true friend beats ten acquaintances. Focus on developing one meaningful relationship rather than pressuring popularity.",
         "Respect sensory needs. Crowded, noisy environments overwhelm many autistic children. Smaller, quieter gatherings increase success. Home visits often work better than parties.",
-        "Model social interaction yourself. Let your child observe you being friendly, resolving conflicts, showing empathy. You're their first social teacher."
+        "Model social interaction yourself. Let your child observe you being friendly, resolving conflicts, showing empathy. You're their first social teacher.",
+        "**Rwanda Adaptation:** Do not force social interaction. Start with one familiar family member sitting nearby without demands. Familiar Rwandan music or household sounds can ease the child into shared space. Gradual exposure to community gatherings (umuganda, church) can be practiced in short increments."
       ]
     },
     {
@@ -380,7 +535,8 @@
         "Echolalia (repeating phrases) serves purposes: self-regulation, processing, communication. Don't suppress it. Build on it by adding one word to echoed phrases.",
         "For literal interpretation, explain idioms explicitly: 'It's raining cats and dogs means heavy rain, not actual animals.' Teach figurative language directly.",
         "AAC devices (tablets with communication apps) give voice to nonverbal children. Start early - don't wait until 'everything else fails.' Consult an AAC specialist for assessment.",
-        "Follow your child's interests and talk about those. Narrate what they're doing: 'You're stacking blocks! Tall tower!' This builds language without demanding response."
+        "Follow your child's interests and talk about those. Narrate what they're doing: 'You're stacking blocks! Tall tower!' This builds language without demanding response.",
+        "**Rwanda Adaptation:** Use picture cards made from cardboard or drawn by hand. Point to objects around the home (cup, food, bed) to build vocabulary. Local community health workers (CHWs/Inshuti z'Umuryango) can sometimes assist with home visits. Autism Rwanda offers communication support resources."
       ]
     },
     {
@@ -405,7 +561,32 @@
         "toe walking persistent",
         "high pain tolerance unusual",
         "startled by gentle touch",
-        "dislikes hugs or touch"
+        "dislikes hugs or touch",
+        "she is covering her ears",
+        "he is covering his ears",
+        "child is covering ears",
+        "she is overwhelmed by noise",
+        "he is overwhelmed by noise",
+        "child is overwhelmed",
+        "she can't handle the noise",
+        "he can't handle the noise",
+        "child is sensitive to light",
+        "she is sensitive to light",
+        "she is overwhelmed in public",
+        "he is overwhelmed in public",
+        "child is overwhelmed at church",
+        "child is overwhelmed at market",
+        "she is overwhelmed at school",
+        "he is overwhelmed at school",
+        "child is shutting down",
+        "she is shutting down",
+        "he is shutting down",
+        "child is rocking back and forth",
+        "she is rocking",
+        "he is rocking",
+        "child is flapping hands",
+        "she is flapping",
+        "he is flapping"
       ],
       "responses": [
         "Sensory sensitivities are real and painful, not behavioral choices. Validate: 'I see this sound hurts your ears.' Offer solutions: headphones, sunglasses, comfortable clothing.",
@@ -417,7 +598,9 @@
         "Sensory-seeking behaviors (spinning, crashing, chewing) serve regulatory functions. Provide safe outlets: trampolines, chewelry, weighted items, therapy swings.",
         "Clothing modifications: remove tags, buy seamless socks, choose soft fabrics, let your child select comfortable options. Buy multiples of accepted items.",
         "Teach self-advocacy: 'This is too loud,' 'I need a break,' 'The light hurts.' Role-play asking for accommodations. Self-advocacy protects against overwhelm.",
-        "Remember: sensory differences are part of autism neurology, not defects. Accommodate generously while building coping skills. Both acceptance and growth matter."
+        "Remember: sensory differences are part of autism neurology, not defects. Accommodate generously while building coping skills. Both acceptance and growth matter.",
+        "**Rwanda Adaptation:** Create a calm corner using a folded traditional blanket (inzuzi) on the floor. Dim light by closing curtains or moving outside under a tree. Avoid crowded markets or church gatherings during overload periods. Banana leaves or a quiet outdoor space can serve as a natural sensory break area.",
+        "**When your child is overwhelmed by senses:** Turn off the radio immediately. Ask everyone to speak softly or leave the room. Move your child to the quietest spot in the house - or outside under a tree if it is calm there. Do not touch them unless they want to be touched. Do not explain or ask questions. Just be near them quietly. Fold a heavy kitenge across their lap if they will allow it. Wait. The overload will pass. After they calm, offer water. Then rest together."
       ]
     },
     {
@@ -442,19 +625,44 @@
         "screen time affecting sleep",
         "melatonin dosage safe",
         "sleep medication considerations",
-        "exhausted from sleep deprivation"
+        "exhausted from sleep deprivation",
+        "she won't sleep",
+        "he won't sleep",
+        "child won't sleep",
+        "she is not sleeping",
+        "he is not sleeping",
+        "child is not sleeping",
+        "she wakes up at night",
+        "he wakes up at night",
+        "child wakes up at night",
+        "she screams at night",
+        "he screams at night",
+        "child screams at night",
+        "she won't go to bed",
+        "he won't go to bed",
+        "child won't go to bed",
+        "child is awake all night",
+        "she is awake all night",
+        "child sleeps very little",
+        "she sleeps very little",
+        "child is exhausted but won't sleep",
+        "she is tired but won't sleep",
+        "child wakes everyone up at night",
+        "she wakes us up every night"
       ],
       "responses": [
         "Consistent sleep schedules regulate internal clocks. Same bedtime and wake time EVERY day, even weekends. This is the single most important sleep intervention.",
         "Create a calming pre-sleep routine: warm bath, pajamas, quiet activity, book, bed. Keep it 30-60 minutes. Predictability signals safety to the nervous system.",
         "Eliminate screens 1-2 hours before bed. Blue light suppresses melatonin. If unavoidable, use blue-light filters or amber glasses. Charge devices outside bedroom.",
-        "Optimize sleep environment: cool (65-68\u00c2\u00b0F), dark (blackout curtains), quiet (white noise machine). Weighted blankets provide calming deep pressure for many children.",
+        "Optimize sleep environment: cool (65-68Â°F), dark (blackout curtains), quiet (white noise machine). Weighted blankets provide calming deep pressure for many children.",
         "Address medical issues disrupting sleep: constipation, reflux, seizures, eczema itching, enlarged adenoids causing apnea. Medical treatment often resolves sleep problems.",
         "Melatonin supplements can help reset circadian rhythms. Start low (0.5-1mg) 30 minutes before bed. Discuss with pediatrician first, especially for long-term use.",
         "For night wandering, ensure safety: gates on stairs, door alarms, locks above reach. Consider baby monitor with video. Safety prevents elopement tragedies.",
         "Bedtime anxiety needs addressing: worry box (write concerns, store till morning), relaxation exercises, comfort objects, nightlight. Anxious brains can't sleep.",
         "Nap transitions affect nighttime sleep. If child is over 4 and napping late, move nap earlier or shorten it. Overtired children paradoxically sleep worse.",
-        "Parental sleep deprivation is serious. Tag-team with partner, arrange respite care, lower standards temporarily. You can't pour from an empty cup. Rest matters."
+        "Parental sleep deprivation is serious. Tag-team with partner, arrange respite care, lower standards temporarily. You can't pour from an empty cup. Rest matters.",
+        "**Rwanda Adaptation:** Use a consistent bedtime routine with familiar Rwandan lullabies or soft humming. Warm local herbal tea (like ginger or lemongrass) before bed can help relaxation. Keep the sleeping area cool and dark. A heavy traditional blanket (inzuzi) can provide calming deep pressure.",
+        "**What Rwandan caregivers do for sleep problems:** Many autistic children do not sleep well. This is very hard for the whole family. First, do the same things every night before bed: bath, drink water, quiet song, then bed. Second, one hour before bed, turn off the radio and dim the lights. Third, use a heavy blanket - fold a traditional blanket or kitenge across their legs. The weight helps calm the body. Fourth, if they wake at night, do not turn on lights or start talking. Just offer water and pat their back gently. Fifth, if no sleep for many nights, go to the health center. Ask about melatonin - a natural supplement that helps sleep. You are not alone. Many parents are exhausted too."
       ]
     },
     {
@@ -479,19 +687,46 @@
         "chews and spits out",
         "won't sit for meals",
         "grazing all day no meals",
-        "feeding tube considerations"
+        "feeding tube considerations",
+        "she won't eat",
+        "he won't eat",
+        "child won't eat",
+        "she is not eating",
+        "he is not eating",
+        "child is not eating",
+        "she refuses food",
+        "he refuses food",
+        "child refuses food",
+        "she only eats one thing",
+        "he only eats one thing",
+        "child is very picky",
+        "she is very picky about food",
+        "she spits out food",
+        "he spits out food",
+        "child spits out food",
+        "she gags on food",
+        "he gags on food",
+        "child gags on food",
+        "child is losing weight",
+        "she is losing weight",
+        "child won't try new foods",
+        "she won't try new foods",
+        "child eats the same thing every day",
+        "she eats the same thing every day"
       ],
       "responses": [
         "Feeding challenges are extremely common in autism. Sensory sensitivities make certain textures/smells/tastes genuinely unbearable. Identify which aspects are problematic before intervening.",
         "Division of responsibility: YOU decide what's offered, WHEN, and WHERE. CHILD decides WHETHER and HOW MUCH. This reduces power struggles and trust issues around food.",
         "Repeated exposure without pressure works: 15-20 exposures before acceptance. Place tiny amounts on plate without requiring tasting. Just seeing it near 'safe foods' helps.",
-        "Food chaining expands variety gradually: if they eat McDonald's nuggets \u00e2\u2020\u2019 different brand nuggets \u00e2\u2020\u2019 baked chicken strips \u00e2\u2020\u2019 roasted chicken. Bridge from accepted to new.",
+        "Food chaining expands variety gradually: if they eat McDonald's nuggets â†’ different brand nuggets â†’ baked chicken strips â†’ roasted chicken. Bridge from accepted to new.",
         "Involve your child in shopping, cooking, gardening. Touching, smelling, preparing increases willingness. Even picking between two vegetables gives ownership and pride.",
         "Hide nutrition temporarily while expanding: blend veggies into smoothies, add protein powder to favorites, use multivitamins. Survival mode is okay during expansion work.",
         "Consider oral motor therapy if chewing/swallowing is difficult. Weak mouth muscles make eating exhausting. SLPs assess and treat oral motor deficits affecting feeding.",
         "Work with a feeding specialist for severe selectivity (under 20 foods), weight loss, or nutritional deficiencies. They create systematic desensitization plans tailored to your child.",
         "Make food fun: cut shapes, make faces, use colorful plates, dip sauces. Playfulness reduces pressure. Does your child respond to creative presentations?",
-        "Mealtime atmosphere matters more than menu. Peaceful meals build positive associations. Consider separate meals temporarily if battles are destroying relationships."
+        "Mealtime atmosphere matters more than menu. Peaceful meals build positive associations. Consider separate meals temporarily if battles are destroying relationships.",
+        "**Rwanda Adaptation:** Introduce familiar Rwandan foods first: ugali, isombe, ibirayi, ibishyimbo. Avoid forcing new textures. Use the same plate and cup every meal for predictability. If the child refuses all food for more than 2 days, visit the nearest health center to rule out medical causes.",
+        "**What Rwandan caregivers do for picky eating:** Do not force food. Force creates fear. First, serve one food at a time, not mixed. For example, rice separate from beans, not mixed together. Second, remove spicy pepper - many autistic children cannot tolerate strong spices. Third, let your child touch the food before eating. Fourth, if they only eat three foods, that is okay for now. Keep offering tiny bits of new foods next to the safe foods. Do not require tasting. Just looking is a win. Fifth, if your child is losing weight or not growing, go to the health center. In the meantime, blend safe foods into a drink if they will take it. You can add ubushera or milk for nutrition."
       ]
     },
     {
@@ -528,7 +763,8 @@
         "Create 'change kits' with comfort items for unexpected disruptions: headphones, fidgets, favorite toy, snacks. Preparedness reduces anxiety when plans shift.",
         "Teach coping self-talk: 'I can handle changes.' 'Different isn't bad.' 'I'm flexible.' Practice during calm moments. Internal dialogue shapes responses.",
         "Balance accommodation with growth: honor genuine needs for predictability while stretching flexibility muscles. Both acceptance and challenge matter for development.",
-        "Model flexibility yourself: 'Our plans changed. I'm disappointed too. Let's figure out Plan B together.' Children learn resilience from watching us adapt."
+        "Model flexibility yourself: 'Our plans changed. I'm disappointed too. Let's figure out Plan B together.' Children learn resilience from watching us adapt.",
+        "**Rwanda Adaptation:** Draw a simple daily schedule on paper or cardboard using pictures. Use the sun position as a time cue (morning, midday, evening). Involve the child in predictable daily tasks like fetching water or setting food on the table to build routine and independence."
       ]
     },
     {
@@ -565,7 +801,8 @@
         "Girls often present differently than boys: better masking/camouflaging, special interests more socially acceptable, internalizing symptoms. This leads to underdiagnosis or late diagnosis in females.",
         "Co-occurring conditions are common: ADHD (50-70%), anxiety (40%), depression (30%), epilepsy (25%), GI issues (70%), sleep disorders (80%). Treat co-occurring conditions to improve quality of life.",
         "Regression (losing skills) occurs in 25-30% of autistic children, typically between 15-24 months. Report regression immediately to pediatrician. Early intervention can help regain skills.",
-        "A diagnosis opens doors to services, accommodations, and understanding. But your child is the same wonderful person before and after diagnosis. Labels describe, don't define."
+        "A diagnosis opens doors to services, accommodations, and understanding. But your child is the same wonderful person before and after diagnosis. Labels describe, don't define.",
+        "**Rwanda Adaptation:** In Rwanda, start by visiting your district hospital or health center and asking for a referral to a developmental pediatrician. Autism Rwanda (+250 788 386 185) can guide you through the local diagnosis process. CHUK (Centre Hospitalier Universitaire de Kigali) and King Faisal Hospital in Kigali have specialists. Diagnosis tools like ADOS used in Western countries may not be available locally, but clinical assessment is still possible."
       ]
     },
     {
@@ -593,6 +830,7 @@
         "when to change therapists"
       ],
       "responses": [
+        "**Important for Rwandan parents:** Many therapies listed below (ABA, occupational therapy, speech therapy) are not widely available in Rwanda yet, especially outside Kigali. Do not feel bad if you cannot access them. Start with what you have: your district hospital, Autism Rwanda (contact them on WhatsApp), and NCPD (National Council of Persons with Disabilities). The home strategies I give you can still help your child greatly. You do not need money or specialists to begin helping your child today.",
         "Common therapies include: Speech (communication), OT (sensory/motor skills), ABA (behavior), Social Skills groups, Play therapy. Combination approaches often work best. Individualize based on your child's needs.",
         "ABA (Applied Behavior Analysis) uses reinforcement to increase desired behaviors. Look for modern, compassionate ABA focusing on skill-building, not compliance. Avoid providers using punishment.",
         "Speech therapists address expressive/receptive language, social pragmatics, feeding/swallowing, and AAC devices. Request SLPs experienced with autism and neurodiversity-affirming practices.",
@@ -602,7 +840,8 @@
         "Finding qualified therapists: ask for credentials (BCBA, CCC-SLP, OTR/L), experience with autism specifically, philosophy alignment, parent involvement policies. Trust your gut about fit.",
         "Intensity varies: some children benefit from 10-15 hours weekly, others from 2-3 focused sessions. Quality matters more than quantity. Burnout helps no one - pace sustainably.",
         "Parent training multiplies therapy impact. You're with your child far more than therapists. Learning techniques ensures consistency across environments. Ask therapists to coach you.",
-        "Evidence-based practices for autism include: visual supports, social narratives, video modeling, peer-mediated instruction, technology-aided instruction. Ask providers what research supports their methods."
+        "Evidence-based practices for autism include: visual supports, social narratives, video modeling, peer-mediated instruction, technology-aided instruction. Ask providers what research supports their methods.",
+        "**Rwanda Note:** Many therapies listed here (ABA, BCBA, OT, SLP) are not widely available in Rwanda yet. Start by contacting Autism Rwanda or your district hospital to ask what services exist near you. The National Council of Persons with Disabilities (NCPD) can also connect you with local support. Many strategies in this chatbot can be done at home without a therapist."
       ]
     },
     {
@@ -639,7 +878,8 @@
         "Vision and hearing assessments are crucial, especially for nonverbal children or those with communication delays. Rule out sensory deficits before attributing to autism.",
         "Pediatric dentists experienced with special needs use desensitization, sedation options, and patience. Regular dental care prevents painful problems that can't be verbalized.",
         "Care coordinators or case managers (often social workers) help navigate multiple appointments, insurance, services. Large children's hospitals often have embedded care coordination.",
-        "Build your care team gradually. Start with developmental pediatrician, add specialists as needs arise. Keep organized records. You're the CEO of your child's healthcare team."
+        "Build your care team gradually. Start with developmental pediatrician, add specialists as needs arise. Keep organized records. You're the CEO of your child's healthcare team.",
+        "**Rwanda Adaptation:** In Rwanda, start with your district hospital and request a referral to a developmental pediatrician. CHUK and King Faisal Hospital in Kigali have specialists. For seizures or neurological concerns, ask for a neurology referral. Mutuelle de Sante covers many consultations at public hospitals."
       ]
     },
     {
@@ -676,7 +916,8 @@
         "Insurance navigation: request denials in writing, appeal with supporting letters, escalate to supervisors, document every call. Nonprofits often have insurance advocates to help.",
         "Government benefits vary by location: SSI (income support), Medicaid (health insurance), waiver programs (home/community services). Apply early - processing takes months. Nonprofits help with applications.",
         "Support groups provide validation, practical tips, and friendship. Parents need community too. Online groups offer 24/7 support; in-person provides deeper connections. Both matter.",
-        "You are your child's best advocate. Professionals come and go; you remain. Build knowledge, document everything, trust instincts, advocate fiercely. You've got this."
+        "You are your child's best advocate. Professionals come and go; you remain. Build knowledge, document everything, trust instincts, advocate fiercely. You've got this.",
+        "**Rwanda Adaptation:** In Rwanda, professional referrals go through your health center or district hospital. Ask for a referral to a developmental pediatrician, neurologist, or psychologist. Autism Rwanda can also guide you to the right professional. BCBA and IEP coordinators mentioned in other responses are US-specific roles not yet available in Rwanda."
       ]
     },
     {
@@ -704,6 +945,7 @@
         "transition between classes hard"
       ],
       "responses": [
+        "**Note for Rwandan parents:** Rwanda does not have IEP or 504 laws like the US. But your child has rights. Start by speaking to your child's headteacher. Ask for: seating at the front, extra time on tests, permission to take breaks when overwhelmed, and no punishment for autism-related behaviors. If the school refuses, ask your umudugudu leader or district education officer for help. You can also contact NCPD for advocacy.",
         "IEPs (Individualized Education Plans) provide specialized instruction and related services at no cost. Request evaluation in writing if struggling. Schools must respond within timelines.",
         "504 Plans provide accommodations (preferential seating, extended time, sensory breaks) without specialized instruction. Less formal than IEPs but still legally binding.",
         "Effective accommodations: visual schedules, movement breaks, reduced homework load, alternative testing environments, noise-reducing headphones, access to quiet spaces.",
@@ -713,7 +955,8 @@
         "Homework modifications: reduce volume, extend deadlines, eliminate busywork, provide written instructions, allow breaks. Homework shouldn't consume evenings or destroy relationships.",
         "Teacher communication: establish regular check-ins (weekly email, communication notebook), share successful strategies, provide positive updates too. Partnership beats adversarial dynamics.",
         "School refusal often signals underlying issues: bullying, academic struggle, sensory overwhelm, anxiety. Investigate root causes. Gradual re-entry plans work better than forced attendance.",
-        "Transition to adulthood begins at 16 (ideally 14). Include measurable post-secondary goals for education, employment, independent living. Invite your child to IEP meetings."
+        "Transition to adulthood begins at 16 (ideally 14). Include measurable post-secondary goals for education, employment, independent living. Invite your child to IEP meetings.",
+        "**Rwanda Adaptation:** Rwanda has inclusive education policies under the Ministry of Education. Ask your child's school about the Special Needs Education (SNE) program. Some schools have resource rooms or SNE teachers. If your child is refused enrollment, contact the district education office or NCPD for support. IEPs and 504 plans are US-specific; in Rwanda, request an individual learning support plan from the school."
       ]
     },
     {
@@ -750,7 +993,8 @@
         "Handle losing by practicing beforehand: 'Sometimes I win, sometimes I lose. Both are okay.' Model graceful losing. Praise effort over outcome. Make losing low-stakes initially.",
         "Self-advocacy develops over time: teaching 'I need help,' 'This is too loud,' 'I need a break.' Start young with simple phrases. Self-advocacy protects against overwhelm and abuse.",
         "Disclosure decisions are personal. Some children proudly share autism identity; others prefer privacy. Discuss pros/cons. Role-play responses to questions. Support your child's choice.",
-        "Build on strengths and interests. Competence breeds confidence. Whether dinosaurs, trains, or art - nurture passions. Special interests can become careers, friendships, joy."
+        "Build on strengths and interests. Competence breeds confidence. Whether dinosaurs, trains, or art - nurture passions. Special interests can become careers, friendships, joy.",
+        "**Rwanda Adaptation:** Practice social skills during everyday Rwandan activities: greeting elders, sharing food, participating in umuganda. Use role-play with siblings or cousins in familiar settings. Community events are natural practice grounds when introduced gradually and with low pressure."
       ]
     },
     {
@@ -787,7 +1031,8 @@
         "Housing options range from independent living with supports to supervised apartments to group homes. Visit multiple options. Waitlists are LONG - apply years in advance.",
         "Employment support: Vocational Rehabilitation agencies provide job coaching, skills training, supported employment. Many autistic adults thrive with right accommodations and job match.",
         "Healthcare transition: establish care with adult providers before pediatrician discharges (typically age 21). Prepare your child to speak for themselves during appointments.",
-        "Benefits change at 18: SSI eligibility based on YOUR income ends; they must apply independently. Medicaid may continue. Apply 3-6 months before 18th birthday."
+        "Benefits change at 18: SSI eligibility based on YOUR income ends; they must apply independently. Medicaid may continue. Apply 3-6 months before 18th birthday.",
+        "**Rwanda Note:** Transition planning in Rwanda differs from the US system. There are no IEP transition plans or ABLE accounts. Focus on practical life skills: cooking, cleaning, local market navigation, and community participation. NCPD and Autism Rwanda can advise on vocational training options available locally."
       ]
     },
     {
@@ -824,7 +1069,8 @@
         "Personal Care Assistants (PCAs) help with daily living: bathing, dressing, meal prep, medication reminders, community access. Agencies hire and train; you interview and select.",
         "Case management coordinates services, monitors care plans, advocates for needs. Often included in Medicaid waivers. Good case managers are worth their weight in gold.",
         "Mental health support remains crucial. Adult autistic individuals face high rates of anxiety, depression, suicidality. Find therapists knowledgeable about autism in adults.",
-        "Self-advocacy movements led by autistic adults provide invaluable perspectives: Autistic Self Advocacy Network (ASAN), Autism Women's Network. Follow actually autistic voices."
+        "Self-advocacy movements led by autistic adults provide invaluable perspectives: Autistic Self Advocacy Network (ASAN), Autism Women's Network. Follow actually autistic voices.",
+        "**Rwanda Note:** US-specific services like Vocational Rehabilitation, Section 8 housing, and PCA services do not exist in Rwanda. For adult support, contact NCPD (National Council of Persons with Disabilities) for disability registration and benefits under RSSB. Autism Rwanda can advise on supported employment and community inclusion options."
       ]
     },
     {
@@ -861,7 +1107,8 @@
         "Guardianship: petition filed in probate court. Requires medical/psychological evaluations. Court appoints attorney for your child. Hearing held. Annual reports required. Consider less restrictive alternatives first.",
         "Representative Payee: manages government benefits for someone unable to do so. Simpler than guardianship. Apply through SSA. Must report annually how funds spent.",
         "Life insurance: term insurance inexpensive way to fund future care. Name special needs trust as beneficiary, NOT your child directly. Review beneficiaries after major life changes.",
-        "Grandparents often want to help but may inadvertently disqualify grandchildren from benefits by leaving inheritance directly. Educate family about proper gifting through SNTs or ABLE accounts."
+        "Grandparents often want to help but may inadvertently disqualify grandchildren from benefits by leaving inheritance directly. Educate family about proper gifting through SNTs or ABLE accounts.",
+        "**Rwanda Note:** ABLE accounts, SSI, Medicaid waivers, and special needs trusts are US-specific and do not apply in Rwanda. In Rwanda, register your child with NCPD to access disability benefits through RSSB (Rwanda Social Security Board). Ensure your child is covered under Mutuelle de Sante. Consult a local lawyer for guardianship planning as your child approaches adulthood."
       ]
     },
     {
@@ -898,7 +1145,8 @@
         "Prescription formularies tier medications by cost. Non-preferred medications require exceptions demonstrating failure of preferred alternatives or unique medical needs.",
         "Continuation of Care: when changing insurance, request temporary continuation with current providers during transition. Critical for established therapeutic relationships.",
         "External Review: if internal appeals exhausted, request independent external review by third party. Binding decision. State insurance department oversees process.",
-        "Patient Assistance Programs: pharmaceutical companies offer free/low-cost medications for uninsured/underinsured. NeedyMeds.org maintains database. Social workers can help apply."
+        "Patient Assistance Programs: pharmaceutical companies offer free/low-cost medications for uninsured/underinsured. NeedyMeds.org maintains database. Social workers can help apply.",
+        "**Rwanda Note:** Rwanda uses Mutuelle de Sante (community-based health insurance) rather than private insurance. Ensure your child is enrolled in Mutuelle de Sante through your sector office. This covers most consultations at public health centers and district hospitals. For specialized care, a referral from your health center is required. Contact your sector social affairs officer for assistance with enrollment."
       ]
     },
     {
@@ -923,7 +1171,27 @@
         "exercise nutrition sleep parents",
         "setting boundaries saying no",
         "celebrating small victories",
-        "finding joy meaning purpose"
+        "finding joy meaning purpose",
+        "I am exhausted",
+        "I can't do this anymore",
+        "I am overwhelmed",
+        "I need help",
+        "I am struggling",
+        "this is too hard",
+        "I am burned out",
+        "I feel like giving up",
+        "I am so tired",
+        "nobody helps me",
+        "I am alone in this",
+        "my husband doesn't help",
+        "I have no support",
+        "I am crying every day",
+        "I don't know how to cope",
+        "I feel like a bad parent",
+        "I am failing my child",
+        "I am so stressed",
+        "I need a break",
+        "I can't cope anymore"
       ],
       "responses": [
         "Caregiver burnout is real and serious. Symptoms: exhaustion, irritability, hopelessness, health problems, substance use. You can't pour from an empty cup. Self-care isn't selfish - it's survival.",
@@ -935,7 +1203,10 @@
         "Respite care provides temporary relief: trained caregivers watch your child while you rest, run errands, or vacation. Some agencies specialize in special needs. Even 4 hours monthly prevents burnout.",
         "Parent support groups provide validation, practical tips, friendship. Only other autism parents truly understand. Online groups offer 24/7 support; in-person provides deeper connection.",
         "Professional mental health support matters. Therapists specializing in chronic stress, trauma, or disability provide coping tools. Medication for anxiety/depression isn't weakness - it's treatment.",
-        "Find joy in the journey. Celebrate small victories. Your child brings unique gifts: honesty, passion, different perspective. Their timeline isn't wrong - just different. You're raising exactly the child you were meant to raise."
+        "Find joy in the journey. Celebrate small victories. Your child brings unique gifts: honesty, passion, different perspective. Their timeline isn't wrong - just different. You're raising exactly the child you were meant to raise.",
+        "**Rwanda Adaptation:** Caregiver burnout is real and common. Talk to your local community health worker (CHW) or Inshuti z'Umuryango about respite support. Autism Rwanda has parent support groups. NCPD can connect you with disability benefits under RSSB. You are not alone, and asking for help is strength, not weakness.",
+        "You are exhausted. That is not weakness. That is what happens when you love someone this much and work this hard. You cannot pour from an empty cup. Rest when your child sleeps. Ask a neighbor or family member to sit with your child for one hour so you can breathe. You matter too. A rested parent helps their child more than an exhausted one. You are not alone. Autism Rwanda has parent support groups where other Rwandan caregivers share this same weight. Reach out.",
+        "If you are feeling like you cannot continue, please talk to someone. Go to your health center and tell the nurse: 'I am a caregiver and I am not coping.' They can help. Your community health worker (CHW) can also visit your home. You do not have to carry this alone. Asking for help is not failure. It is wisdom."
       ]
     },
     {
@@ -972,7 +1243,8 @@
         "Podcasts: 'Autism Live,' 'Turning Points,' 'Differently Wired.' Listen during commutes, chores. Expert interviews and parent stories provide education and validation.",
         "Conferences provide intensive learning: Autism Society National Conference, IMFAR (research), local university clinics. Many offer scholarships or sliding scale registration.",
         "Hospital-based support programs often include: parent training, sibling groups, respite events, resource libraries. Children's hospitals particularly strong in developmental disabilities.",
-        "Faith communities can provide spiritual support, respite volunteers, acceptance. Seek inclusive congregations. Some denominations have special needs ministries."
+        "Faith communities can provide spiritual support, respite volunteers, acceptance. Seek inclusive congregations. Some denominations have special needs ministries.",
+        "**Rwanda Resources:** Autism Rwanda has parent support groups in Kigali and some districts. Contact them at +250 788 386 185 or visit autismrwanda.org. Your district hospital social worker can also connect you with local parent networks. Online groups on WhatsApp exist for Rwandan autism parents."
       ]
     },
     {
@@ -996,14 +1268,47 @@
         "trauma stress caused regression",
         "school change sibling regression",
         "recover lost skills regain",
-        "early intervention regression"
+        "early intervention regression",
+        "she stopped talking",
+        "he stopped talking",
+        "child stopped talking",
+        "she is not talking anymore",
+        "he is not talking anymore",
+        "she stopped talking how can i help her",
+        "she stoped talking how can i help her",
+        "she lost her words",
+        "he lost his words",
+        "child lost words",
+        "she used to talk now she doesn't",
+        "he used to talk now he doesn't",
+        "child is not speaking anymore",
+        "she went silent",
+        "she stopped communicating",
+        "he stopped communicating",
+        "child regressed",
+        "she regressed",
+        "he regressed",
+        "she forgot how to do things",
+        "he forgot how to do things",
+        "child lost skills",
+        "she lost her skills",
+        "she was potty trained now she isn't",
+        "he was potty trained now he isn't",
+        "child stopped making eye contact",
+        "she stopped looking at me",
+        "she is withdrawing",
+        "he is withdrawing",
+        "child is withdrawing"
       ],
       "responses": [
+        "I understand how frightening it is when your child loses skills they had before. This is called regression and it is real. You did not cause this. Let me help you understand what to do.\n\nStep 1 - Check for physical illness first (do this today):\n- Go to your nearest health center\n- Ask them to check: ears, throat, stomach, and for signs of pain\n- Many regressions are caused by pain or illness the child cannot tell you about\n- Also ask about seizures - some seizures are not obvious and can cause regression\n\nStep 2 - Look for big changes in their life:\n- New baby in the house?\n- Moving to a new home?\n- Change of school or teacher?\n- Death or illness in the family?\n- These changes can cause regression even weeks later\n\nStep 3 - Go back to basics:\n- Same wake time every day\n- Same meals at the same time\n- Same bedtime routine\n- Familiar foods, familiar people, familiar places\n- Reduce demands for now - just focus on comfort and routine\n\nStep 4 - Be patient:\n- Lost skills often come back when the child feels safe again\n- Do not push or test them - this adds pressure and slows recovery\n- Celebrate tiny signs of progress\n\nStep 5 - Get support:\n- Go to your district hospital and ask for a referral to a developmental pediatrician\n- Contact Autism Rwanda for guidance: +250 788 386 185\n- Tell them: 'My child has lost skills they had before.'\n\nYou have not lost your child. Regression is hard but it is not permanent. Keep going.",
         "**Regression IS REAL & Devastating:** 25-30% of autistic children experience regression, typically 15-24 months but can occur anytime. Skills lost: words, social engagement, eye contact, play skills, self-care abilities. **NOT your fault** - caused by neurological changes, not parenting. **Medical evaluation URGENT** to rule out treatable causes.",
         "**Medical Rule-Outs IMMEDIATE:** 1) EEG (seizure activity can cause regression), 2) Metabolic testing, 3) Genetic testing (some syndromes show regression pattern), 4) Hearing/vision assessment, 5) PANDAS/PANS evaluation (autoimmune reaction to infection), 6) Lead poisoning screen. **Some causes reversible** with treatment - don't delay.",
         "**Common Regression Triggers:** 1) Seizure activity (subclinical, not obvious convulsions), 2) Significant stressors (new sibling, moving, divorce, death), 3) Medical illness (high fever, hospitalization), 4) Sensory overwhelm (environmental changes), 5) Unknown neurological factors. **Identifying trigger guides intervention.**",
         "**Skill Recovery Strategies:** 1) Increase therapy intensity (speech, OT, ABA), 2) Return to basics (treat child as younger temporarily), 3) Visual supports for all routines, 4) Reduce demands/stress while rebuilding, 5) Document EVERY small gain (photos, videos). **Progress slow but possible** - many children regain lost skills with intensive support.",
-        "**Emotional Support for Parents:** Watching your child regress is traumatic, devastating. Allow yourself to grieve. Connect with other parents who understand. Therapy helps process loss. **Important:** Regression doesn't mean permanent loss. Many children recover and surpass previous levels. Your advocacy and intensive intervention make difference. **Hope is real.**"
+        "**Emotional Support for Parents:** Watching your child regress is traumatic, devastating. Allow yourself to grieve. Connect with other parents who understand. Therapy helps process loss. **Important:** Regression doesn't mean permanent loss. Many children recover and surpass previous levels. Your advocacy and intensive intervention make difference. **Hope is real.**",
+        "**Rwanda Adaptation:** Regression can be triggered by illness, family stress, or major changes like moving or a new sibling. Rule out physical illness first at your nearest health center. Re-establish familiar routines using visual cues. Contact Autism Rwanda if regression is severe or prolonged.",
+        "When your child loses skills they had before, it is frightening. First, check for illness - fever, ear infection, stomach pain, constipation. Many regressions are caused by physical pain the child cannot tell you about. Go to the health center. Second, check for big changes - new baby, moving house, death in family, change of school. These can cause regression. Third, go back to basics: same routine, same foods, same sleep time. Rebuild the foundation. The skills often come back. Be patient. You have not lost your child."
       ]
     },
     {
@@ -1032,10 +1337,11 @@
       ],
       "responses": [
         "**SEIZURE FIRST AID - STAY CALM:** 1) Time the seizure (note start time), 2) Clear area of dangerous objects, 3) Cushion head with folded clothing, 4) Turn on side (prevents choking), 5) Loosen tight clothing around neck. **DON'T:** Restrain movements, put anything in mouth, give food/water/meds until fully alert. **Stay with child** until fully conscious.",
-        "**CALL 911 IF:** 1) Seizure lasts >5 minutes, 2) Repeated seizures without recovery, 3) First-time seizure, 4) Difficulty breathing afterwards, 5) Injury during seizure, 6) Seizure in water, 7) Child has diabetes/heart condition. **When in doubt, call** - better safe than sorry.",
+        "**CALL 114 (Rwanda emergency) IF:** 1) Seizure lasts >5 minutes, 2) Repeated seizures without recovery, 3) First-time seizure, 4) Difficulty breathing afterwards, 5) Injury during seizure, 6) Seizure in water, 7) Child has diabetes/heart condition. **When in doubt, call** - better safe than sorry.",
         "**Types of Seizures in Autism:** 1) Tonic-clonic (convulsions, loss consciousness), 2) Absence (staring spells, unresponsive 5-15 sec), 3) Myoclonic (sudden jerks), 4) Atonic (drop attacks, sudden limpness). **Absence seizures often missed** - looks like daydreaming. If frequent staring spells, request EEG evaluation.",
         "**Seizure Triggers:** Common triggers: 1) Sleep deprivation (MAJOR trigger), 2) Stress/excitement, 3) Flashing/strobing lights (some individuals), 4) Illness/fever, 5) Missed medications, 6) Hormonal changes (menstruation). **Track patterns** in seizure diary to identify YOUR child's triggers.",
-        "**Medical Management:** 1) Pediatric neurologist specializing in epilepsy, 2) EEG to confirm diagnosis/type, 3) MRI to rule out structural causes, 4) Anti-seizure medications (ASMs) - multiple options, 5) Regular blood monitoring (medication levels, liver function). **Medication controls seizures in 70%** but may take trials to find right one. **Never stop abruptly** - can trigger status epilepticus (life-threatening)."
+        "**Medical Management:** 1) Pediatric neurologist specializing in epilepsy, 2) EEG to confirm diagnosis/type, 3) MRI to rule out structural causes, 4) Anti-seizure medications (ASMs) - multiple options, 5) Regular blood monitoring (medication levels, liver function). **Medication controls seizures in 70%** but may take trials to find right one. **Never stop abruptly** - can trigger status epilepticus (life-threatening).",
+        "**Rwanda Adaptation:** Epilepsy medication (like phenobarbital) is available at district hospitals under Mutuelle de Sante. Keep a seizure diary to show the doctor. Inform the school and community health worker about your child's seizures. Never leave a child with known seizures near water unsupervised."
       ]
     },
     {
@@ -1063,10 +1369,11 @@
       ],
       "responses": [
         "**Readiness Signs:** Don't rush - wait for readiness: 1) Staying dry 2+ hours, 2) Awareness of need (hiding, grunting, holding), 3) Can follow simple instructions, 4) Discomfort in soiled diaper, 5) Motor skills (pull pants up/down). **Autistic children often train later** (age 4-7 common, sometimes older). **Not race** - readiness matters most.",
-        "**Step-by-Step Training:** 1) Establish routine (sit every 2 hours, after meals, before bed), 2) Use visual schedule (pants down \u00e2\u2020\u2019 sit \u00e2\u2020\u2019 wipe \u00e2\u2020\u2019 flush \u00e2\u2020\u2019 wash), 3) Timer reminders (vibrating watch), 4) Immediate reinforcement (praise + small treat for success), 5) Accidents = neutral cleanup ('Oops, pee goes in toilet'). **No punishment** - creates anxiety.",
+        "**Step-by-Step Training:** 1) Establish routine (sit every 2 hours, after meals, before bed), 2) Use visual schedule (pants down â†’ sit â†’ wipe â†’ flush â†’ wash), 3) Timer reminders (vibrating watch), 4) Immediate reinforcement (praise + small treat for success), 5) Accidents = neutral cleanup ('Oops, pee goes in toilet'). **No punishment** - creates anxiety.",
         "**Sensory Bathroom Modifications:** 1) Footstool for stability (feet flat = easier elimination), 2) Reduce flush noise (leave room before flushing, use ear defenders), 3) Comfortable seat (not cold/hard - add cushion), 4) Good lighting (not shadowy/scary), 5) Pleasant smells (essential oils, good ventilation). **Make bathroom welcoming, not terrifying.**",
         "**Constipation Management:** Major cause of accidents. 1) High-fiber diet (fruits, vegetables, whole grains), 2) Adequate water intake, 3) Regular physical activity, 4) Scheduled toilet sits after meals (gastrocolic reflex), 5) Stool softeners if pediatrician recommends. **Chronic constipation requires medical treatment** - doesn't resolve alone.",
-        "**Bedwetting (Enuresis):** Common in autism even into teens. 1) Limit fluids 2 hours before bed, 2) Toilet right before sleep, 3) Waterproof mattress protector, 4) Consider bedwetting alarm (moisture sensor wakes child), 5) Medication options (consult doctor for special occasions). **Never shame** - involuntary, not laziness. Many children outgrow naturally."
+        "**Bedwetting (Enuresis):** Common in autism even into teens. 1) Limit fluids 2 hours before bed, 2) Toilet right before sleep, 3) Waterproof mattress protector, 4) Consider bedwetting alarm (moisture sensor wakes child), 5) Medication options (consult doctor for special occasions). **Never shame** - involuntary, not laziness. Many children outgrow naturally.",
+        "**Rwanda Adaptation:** Use a consistent toilet spot and time (after meals, morning, evening). A small stool for foot support helps children feel secure. Reward with praise or a small preferred food. If the child is over 5 and showing no progress, visit a health center to rule out physical causes. Reusable cloth training pants can be made locally."
       ]
     },
     {
@@ -1089,14 +1396,42 @@
         "nutritional deficiency causing pica",
         "iron deficiency anemia pica",
         "how stop eating nonfood",
-        "dangerous items child swallows"
+        "dangerous items child swallows",
+        "she is eating dirt",
+        "he is eating dirt",
+        "child is eating dirt",
+        "she eats soil",
+        "he eats soil",
+        "child eats soil",
+        "she is eating rocks",
+        "he is eating rocks",
+        "child is eating rocks",
+        "she is eating paper",
+        "he is eating paper",
+        "child is eating paper",
+        "she is eating soap",
+        "he is eating soap",
+        "child is eating soap",
+        "she swallowed something",
+        "he swallowed something",
+        "child swallowed something",
+        "she ate something dangerous",
+        "he ate something dangerous",
+        "child is eating non-food items",
+        "she eats non-food items",
+        "child is eating charcoal",
+        "she is eating charcoal",
+        "child is eating sand",
+        "she is eating sand"
       ],
       "responses": [
         "**IMMEDIATE MEDICAL CONCERN:** Pica (eating non-food) can be fatal. 1) Schedule doctor appointment IMMEDIATELY, 2) Request blood test (lead poisoning, iron deficiency, zinc deficiency), 3) Deworm if soil-eating (parasite risk), 4) Discuss supplementation if deficient. **Common causes:** Iron deficiency, mineral deficiencies, sensory-seeking, oral stimulation needs.",
         "**Environmental Safety:** 1) Remove ALL access to non-food items (lock cleaning supplies, pick up small objects), 2) Cover bare soil/mud (lay bricks, concrete, grass), 3) Secure pet food/litter boxes, 4) Check yard for rocks/debris before outdoor play. **Constant supervision required** until behavior controlled.",
         "**Replacement Strategies:** 1) Provide SAFE oral input (chewelry, crunchy snacks, gum if age-appropriate), 2) Scheduled sensory breaks (heavy work, oral motor activities), 3) Teach 'spit out' command with immediate reward, 4) Visual supports: pictures of 'YES eat' vs. 'NO eat.' **Reinforce heavily** when child chooses safe items.",
-        "**Behavioral Intervention:** Track ABCs (Antecedent-Behavior-Consequence). **Pattern examples:** If boredom \u00e2\u2020\u2019 provide activities. If sensory-seeking \u00e2\u2020\u2019 offer chewy tubes. If attention \u00e2\u2020\u2019 give attention for appropriate eating only. **Never punish** - pica often compulsive, not defiance.",
-        "**Emergency Red Flags:** Go to ER immediately if: 1) Swallowed batteries (chemical burns), 2) Sharp objects (internal cuts), 3) Multiple magnets (intestinal perforation), 4) Lead paint chips (poisoning), 5) Large quantities of anything. **Don't wait for symptoms** - some toxins silent until severe damage."
+        "**Behavioral Intervention:** Track ABCs (Antecedent-Behavior-Consequence). **Pattern examples:** If boredom â†’ provide activities. If sensory-seeking â†’ offer chewy tubes. If attention â†’ give attention for appropriate eating only. **Never punish** - pica often compulsive, not defiance.",
+        "**Emergency Red Flags:** Go to ER immediately if: 1) Swallowed batteries (chemical burns), 2) Sharp objects (internal cuts), 3) Multiple magnets (intestinal perforation), 4) Lead paint chips (poisoning), 5) Large quantities of anything. **Don't wait for symptoms** - some toxins silent until severe damage.",
+        "**Rwanda Adaptation:** Keep soil, charcoal, and small objects out of reach. Supervise outdoor play closely. If the child eats soil regularly, visit the health center to check for iron or zinc deficiency, which is common and treatable. Call 114 if the child swallows something dangerous like a battery or sharp object.",
+        "**What Rwandan caregivers do when a child eats dirt, rocks, or other non-food:** This can kill your child. Take it seriously. First, go to the health center immediately. Ask for a blood test - your child may have iron deficiency (anemia) which causes dirt eating. Also ask for deworming medicine. Second, while waiting: cover bare soil with bricks, concrete, or grass. Remove small rocks from the yard. Lock away soap, cleaning products, and batteries. Third, give your child safe things to put in their mouth: clean cloth to chew, crunchy vegetables (carrots, raw beans - supervise), or a clean stick to hold. Fourth, teach 'spit out' - practice with safe items first. Reward heavily when they spit out non-food. Do not punish. This is not defiance. This is a medical and sensory need."
       ]
     },
     {
@@ -1153,14 +1488,228 @@
         "attracted to water bodies",
         "runs when excited overstimulated",
         "no stranger danger awareness",
-        "GPS tracker watch needed"
+        "GPS tracker watch needed",
+        "she is running",
+        "he is running",
+        "child is running away",
+        "she is running away",
+        "he is running away",
+        "she is running how can i calm her",
+        "she ran away",
+        "child keeps running",
+        "she keeps running away",
+        "he keeps running away",
+        "child bolted",
+        "she bolted",
+        "child ran into the street",
+        "she ran into the road",
+        "child escaped",
+        "she escaped from the house",
+        "child is wandering",
+        "she is wandering outside",
+        "child ran out the door",
+        "she ran out the door",
+        "child is missing",
+        "she is missing",
+        "I can't find my child",
+        "child ran toward the water",
+        "she ran toward the river"
       ],
       "responses": [
+        "This is a safety emergency. Running and wandering is the most dangerous thing for an autistic child. Act on this today - not tomorrow.\n\nStep 1 - Secure your home right now:\n- Put a latch or lock HIGH on every door - above where your child can reach\n- Put a bell or tied cloth on the door handle so you hear when it opens\n- Block gaps in your compound fence with sticks, netting, or old sheets\n\nStep 2 - Water is the biggest danger:\n- If there is a river, well, pond, or large water container nearby - this is where to check FIRST if your child goes missing\n- Empty buckets and basins when not in use\n- Cover wells\n- Never leave your child unsupervised near any water\n\nStep 3 - Prepare your community:\n- Tell your neighbors, the umudugudu leader, and nearby shopkeepers about your child\n- Show them a recent photo\n- Say: 'My child has autism. They may not answer when called. If you see them alone, please bring them home or call me.'\n- Sew or embroider your phone number on the inside of your child's clothing\n\nStep 4 - When your child goes missing:\n- Check water sources FIRST - within the first 5 minutes\n- Then call 114 and give them a recent photo\n- Say: 'My child has autism. They may not respond to their name.'\n- Do not wait. Every minute matters.\n\nStep 5 - Teach your child:\n- Practice holding your hand or fabric belt when walking outside\n- Teach 'stop' as a command - practice it every day when calm\n- Use a visual card with your home address and phone number\n\nContact Autism Rwanda for more safety planning support: +250 788 386 185",
         "**IMMEDIATE SAFETY PRIORITY:** Elopement is life-threatening. 1) Install door/window alarms (cheap battery ones work), 2) Add locks child can't reach (high hooks, sliding bolts), 3) Fence yard if possible, 4) Remove attraction to dangers (cover pools, empty basins). **Explanation:** Many autistic children are drawn to water or run when overwhelmed. They lack road safety awareness.",
         "**Step-by-Step Prevention:** 1) Identify triggers (overwhelm? seeking something?), 2) Teach 'stop' command with immediate reinforcement, 3) Practice safe walking (hold hands, use harness/wrist link if needed), 4) Create safe movement spaces (fenced yard, indoor trampoline). **Rwanda context:** Use thick rope/tether for hand-holding practice, create enclosed compound with fencing materials.",
         "**Water Safety CRITICAL:** Drowning is #1 cause of death for autistic children who wander. 1) Lock all pool gates, 2) Empty buckets/basins immediately, 3) Teach swimming early (water survival skills), 4) Always supervise near water. **Many autistic children are magnetically drawn to water** - this is common autism trait.",
         "**If Child Goes Missing - EMERGENCY PROTOCOL:** 1) Call emergency services IMMEDIATELY (don't wait 24hrs), 2) Check ALL water sources first (pools, ponds, wells - within 5 minutes), 3) Provide recent photo + description, 4) Mention autism specifically (may not respond to name, may hide), 5) Search high-interest locations (water, construction sites, animals). **First hours are critical.**",
-        "**Identification Strategies:** 1) ID bracelet with name, address, phone, 2) Sew tags into clothing inside seams, 3) Laminate card in pocket, 4) Register with local police as special needs resident. **Rwanda adaptation:** Embroider phone number on shirt tag, use waterproof marker on child's arm for outings."
+        "**Identification Strategies:** 1) ID bracelet with name, address, phone, 2) Sew tags into clothing inside seams, 3) Laminate card in pocket, 4) Register with local police as special needs resident. **Rwanda adaptation:** Embroider phone number on shirt tag, use waterproof marker on child's arm for outings.",
+        "**What Rwandan caregivers do when a child runs away:** This is life-threatening. Act now. First, put a latch or lock high on the door where your child cannot reach. Second, put a bell on the door so you hear when it opens. Third, if you have a compound, use fencing materials - sticks, netting, old sheets - to block gaps. Fourth, if your child runs toward water (rivers, wells, buckets of water), this is very dangerous. Empty all water containers when not in use. Cover wells. Fifth, teach your child to hold your fabric belt when walking outside. Sixth, if your child goes missing, check water FIRST within 5 minutes. Then call 114. Give them a recent photo and say 'autism - may not respond to name.' Do not wait. Every minute matters."
+      ]
+    },
+    {
+      "tag": "rwandan_context",
+      "patterns": [
+        "I live in Rwanda",
+        "we are in Rwanda",
+        "I am in Kigali",
+        "we don't have those things here",
+        "those services don't exist here",
+        "I can't find a therapist",
+        "no specialist near me",
+        "we are in Africa",
+        "I am in a rural area",
+        "village setting",
+        "no hospital nearby",
+        "limited resources",
+        "we are poor",
+        "can't afford therapy",
+        "no money for treatment",
+        "I am in Rwanda",
+        "we live in Rwanda",
+        "I am in a village",
+        "no services near me",
+        "no therapist here",
+        "we can't afford therapy",
+        "no money",
+        "I have no resources",
+        "I can't afford anything",
+        "no specialist in my area",
+        "I live far from Kigali",
+        "we don't have those things"
+      ],
+      "responses": [
+        "I understand you are in Rwanda and may not have the things mentioned in some responses. That is okay. I will give you what works here. Tell me what your child is doing right now and I will give you steps using what you have at home.",
+        "Many families in Rwanda face the same situation. You do not need expensive therapy to help your child. A kitenge, a quiet corner, a consistent routine, and your presence - these are powerful. What is your biggest challenge today?",
+        "You are not alone. Autism Rwanda supports families across the country, including rural areas. Call or WhatsApp them. Your district hospital can also give you a referral. What is your most urgent concern right now?",
+        "Even without specialists, you can do a great deal at home. Visual schedules made from paper, sensory tools from local materials, and consistent daily routines are all evidence-based and free. Tell me what your child is struggling with.",
+        "Rwanda has growing autism support. Contact Autism Rwanda, visit your district hospital, or speak to your umudugudu leader about connecting you to NCPD. You have more support available than you may know. What do you need help with most?"
+      ]
+    },
+    {
+      "tag": "low_resource_strategies",
+      "patterns": [
+        "I have no money",
+        "can't afford anything",
+        "no therapist nearby",
+        "what can I do at home",
+        "free strategies",
+        "no resources available",
+        "poor family",
+        "can't buy therapy tools",
+        "homemade tools",
+        "DIY autism help",
+        "cheap strategies",
+        "affordable help",
+        "no specialist in my area",
+        "rural area no services",
+        "what can I do without a therapist",
+        "I have no money for therapy",
+        "I cannot afford help",
+        "free ways to help my child",
+        "I have nothing",
+        "what can I do without money",
+        "homemade tools for autism",
+        "what can I do with no resources",
+        "I am very poor",
+        "no hospital near me",
+        "affordable help for autism"
+      ],
+      "responses": [
+        "You do not need money to help your child today. Here is what you can do with what you already have at home:\n\n**For calming:** Fold a heavy kitenge or traditional blanket and place it across your child's lap. The weight calms the nervous system.\n\n**For communication:** Use pictures from old magazines or draw simple drawings on cardboard. Point to 'eat,' 'sleep,' 'water,' 'pain.'\n\n**For routine:** Draw the day's activities on paper - wake, eat, play, bath, sleep. Show your child what comes next.\n\n**For sensory needs:** Let your child carry water containers (not too heavy), help grind or mix food, jump rope, fold blankets. These activities give the body what it needs.\n\n**For meltdowns:** Turn off radio. Ask others to be quiet. Dim lights by covering window with cloth. Sit nearby. Say nothing. Wait.\n\n**You are not failing.** Love is free. Your presence is free. Your patience is free. These matter more than any expensive therapy. Start with one small change today.",
+        "No money, no therapist, no specialist nearby - you can still help your child. Start here: same wake time every day, same meal times, same bedtime. Routine is free and it is one of the most powerful autism tools that exists. Add one thing at a time. Do not try to change everything at once.",
+        "**Free tools from your home:** Sock filled with rice or sand = weighted lap pad. Cardboard with drawings = visual schedule. Heavy blanket = deep pressure. Quiet corner with a mat = calm space. Carrying water or sweeping = heavy work for sensory regulation. You already have everything you need to start.",
+        "**Community resources in Rwanda that cost little or nothing:** Community health workers (CHWs) can do home visits - ask at your health center. Autism Rwanda offers free parent support. District hospitals provide referrals at low cost with Mutuelle de Sante. NCPD can connect you with disability benefits. Ask. Keep asking. You have rights.",
+        "Consistent daily routines are one of the most powerful autism interventions and they cost nothing. Wake up, eat, play, rest, eat, play, bath, sleep - same time every day. Predictability reduces anxiety and meltdowns significantly. Start tomorrow morning."
+      ]
+    },
+    {
+      "tag": "cultural_considerations",
+      "patterns": [
+        "neighbors say it's a curse",
+        "people think evil spirit",
+        "family says it's witchcraft",
+        "is autism a punishment",
+        "church says pray it away",
+        "pastor says demon",
+        "family blaming the mother",
+        "ashamed of my child",
+        "hiding my child",
+        "community doesn't understand",
+        "people stare at my child",
+        "family doesn't believe in autism",
+        "husband doesn't accept diagnosis",
+        "in-laws blame me",
+        "cultural stigma autism",
+        "traditional healer",
+        "umupfumu",
+        "shame disability",
+        "people say it is a curse",
+        "neighbors say it is witchcraft",
+        "family says I did something wrong",
+        "is this a punishment from God",
+        "people are judging me",
+        "I am ashamed of my child",
+        "my family doesn't understand",
+        "my husband blames me",
+        "I hide my child",
+        "community rejects us",
+        "church says it is a demon",
+        "pastor says pray it away",
+        "I feel shame about my child",
+        "people say bad things about my child"
+      ],
+      "responses": [
+        "Let me speak clearly to you as one Rwandan to another. Autism is not a curse. It is not an evil spirit. It is not punishment for something you did.\n\nAutism is how your child's brain was made. Some children are born with eyes that do not see well. Some are born with legs that do not walk well. Your child was born with a brain that works differently. That is all.\n\nYou did not cause this. Not by what you ate. Not by what you did. Not by any sin.\n\nIf neighbors or family say hurtful things, they do not understand. You can say: 'My child has autism. They need help, not blame. Please do not speak about what you do not know.'\n\nYou have nothing to be ashamed of. You are a good parent. You are seeking help. That is courage.",
+        "If people at church say your child has a demon, find a different church or speak to the pastor privately. Many pastors in Rwanda now understand autism. Ask your pastor to learn. Your child needs medical support and consistent care - not exorcism. Both faith and medicine can exist together.",
+        "Your in-laws or husband may not accept the diagnosis. This is painful. You can say: 'The doctor confirmed this is autism. It is a brain difference, not a curse. There are things we can do to help our child.' Autism Rwanda can provide materials in Kinyarwanda to share with family members who do not believe.",
+        "Stigma is real and harmful, but it can change. Many communities in Rwanda have become more accepting as families speak openly. Your child deserves to be seen in public, attend school, and participate in community life. Hiding them increases isolation and slows their development.",
+        "Connect with Autism Rwanda. They will connect you with other Rwandan parents who have heard the same words you have heard - 'curse,' 'evil spirit,' 'bad parent.' Those parents will tell you: it gets better. You are not alone. Your child is a gift, not a curse.",
+        "The shame you feel is not yours to carry. Your child did not choose autism, and neither did you. You are a good parent for seeking help today. That is what good parents do."
+      ]
+    },
+    {
+      "tag": "rwanda_resources",
+      "patterns": [
+        "autism resources in Rwanda",
+        "where to get help in Rwanda",
+        "autism organization Rwanda",
+        "autism Rwanda contact",
+        "disability support Rwanda",
+        "NCPD Rwanda",
+        "Mutuelle de Sante autism",
+        "hospital for autism Rwanda",
+        "Kigali autism help",
+        "Rwanda autism school",
+        "autism support Kigali",
+        "where to take autistic child Rwanda",
+        "autism clinic Rwanda",
+        "Rwanda disability services",
+        "help for autism in Africa"
+      ],
+      "responses": [
+        "**Rwanda Autism Resources:**\n\n**Autism Rwanda** - WhatsApp and phone support, parent training, referrals. Phone: +250 788 386 185. Search 'Autism Rwanda' on Facebook. Ask at your district hospital for their contact.\n\n**NCPD (National Council of Persons with Disabilities)** - Government body that helps with referrals, advocacy, and connecting you to services. Visit their office or ask your umudugudu leader for help reaching them.\n\n**Your District Hospital** - Go to the pediatric or mental health department. Ask for an autism assessment or referral. Even small health centers can connect you to the next level.\n\n**Mutuelle de Sante** - Covers some health services. Ask at your health center what is included for your child.\n\n**Emergency: 114**\n\n**School Support:** Speak to your child's headteacher. Ask for seating at the front, breaks when overwhelmed, and no punishment for autism behaviors. If refused, contact NCPD or district education officer.\n\nYou are not alone. More Rwandan parents are seeking help every day. Your child has rights. Keep asking until you find help.",
+        "**Medical Care in Rwanda:** Start at your nearest health center or district hospital. Ask for a referral to a developmental pediatrician. CHUK (Centre Hospitalier Universitaire de Kigali) and King Faisal Hospital in Kigali have specialists. Mutuelle de Sante covers most consultations at public facilities. Do not wait for a perfect specialist. Start with what is near you.",
+        "**Emergency contacts:** Call 114 for any emergency. Police: 112. Autism Rwanda: +250 788 386 185. CHUK: +250 788 305 000. King Faisal Hospital: +250 252 582 421. If you have no phone, run to your nearest neighbor or health center. Do not wait.",
+        "**Financial support:** Register your child with NCPD to access disability benefits through RSSB (Rwanda Social Security Board). Ensure enrollment in Mutuelle de Sante through your sector office. Ask your sector social affairs officer for help. These services exist for your family.",
+        "**Schools:** Ask your district education office about schools with Special Needs Education (SNE) programs. Rwanda's inclusive education policy means your child has the right to attend school. If a school refuses your child, that is against the law. Contact NCPD or your district education officer.",
+        "**For parents who feel alone:** Autism Rwanda has parent support groups. Other Rwandan parents who understand what you are going through are waiting to meet you. You do not have to carry this alone."
+      ]
+    },
+    {
+      "tag": "emergency_rwanda",
+      "patterns": [
+        "emergency Rwanda",
+        "child not breathing",
+        "severe bleeding",
+        "child unconscious",
+        "poisoning",
+        "child swallowed something dangerous",
+        "child fell and not moving",
+        "seizure not stopping",
+        "child very sick",
+        "urgent help Rwanda",
+        "call for help Rwanda",
+        "ambulance Rwanda",
+        "crisis Rwanda",
+        "child in danger",
+        "what number to call emergency",
+        "emergency",
+        "child is not breathing",
+        "child is unconscious",
+        "child is bleeding badly",
+        "what number to call in Rwanda",
+        "urgent help",
+        "child is in danger",
+        "child is very sick right now",
+        "I need emergency help",
+        "crisis"
+      ],
+      "responses": [
+        "**EMERGENCY IN RWANDA: Call 114 immediately.** This is the Rwanda emergency number. Stay on the line. If you have no phone, send someone to run to the nearest neighbor or health center right now. Do not wait.",
+        "**If your child is not breathing:** Lay them on their back. Tilt their head back gently. Check for breathing. Call 114. If you are trained, begin CPR. Send someone to flag down help or carry your child to the nearest health center. Every second matters.",
+        "**If your child is having a seizure that will not stop (more than 5 minutes):** Do NOT put anything in their mouth. Turn them on their side. Clear the area of hard objects. Call 114 or carry them to the nearest health center or district hospital immediately.",
+        "**If your child swallowed something dangerous (battery, sharp object, chemical, medicine):** Do NOT make them vomit. Call 114 immediately. Go to the nearest health center or district hospital. Bring the container or object with you so the doctor knows what it was.",
+        "**Nearest help - go in this order:** Health center (centre de sante) first. District hospital second. Referral hospital (CHUK or King Faisal in Kigali) third. For autism-specific support after the emergency, call Autism Rwanda: +250 788 386 185.",
+        "**Key Rwanda Emergency Contacts:** Emergency: 114 | Police: 112 | Autism Rwanda: +250 788 386 185 | CHUK: +250 788 305 000 | King Faisal Hospital: +250 252 582 421. Write these numbers on your wall at home."
       ]
     },
     {
