@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function AuthPage({ onAuth }) {
   const [mode, setMode] = useState("login"); // "login" | "register"
   const [form, setForm] = useState({
-    full_name: "", email: "", password: ""
+    full_name: "", email: "", password: "", child_name: ""
   });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -22,6 +22,7 @@ export default function AuthPage({ onAuth }) {
           full_name: form.full_name,
           email: form.email,
           password: form.password,
+          child_name: form.child_name,
         };
 
     try {
@@ -67,14 +68,25 @@ export default function AuthPage({ onAuth }) {
 
         <form className="auth-form" onSubmit={submit} noValidate>
           {mode === "register" && (
-            <div className="form-group">
-              <label htmlFor="full_name">Full Name</label>
-              <input
-                id="full_name" name="full_name" type="text"
-                placeholder="e.g. Uwimana Marie"
-                value={form.full_name} onChange={update} required
-              />
-            </div>
+            <>
+              <div className="form-group">
+                <label htmlFor="full_name">Full Name</label>
+                <input
+                  id="full_name" name="full_name" type="text"
+                  placeholder="e.g. Uwimana Marie"
+                  value={form.full_name} onChange={update} required
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="child_name">Child's Name</label>
+                <input
+                  id="child_name" name="child_name" type="text"
+                  placeholder="e.g. Abby"
+                  value={form.child_name} onChange={update} required
+                />
+              </div>
+            </>
           )}
 
           <div className="form-group">
