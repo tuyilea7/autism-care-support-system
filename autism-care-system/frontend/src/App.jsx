@@ -177,7 +177,10 @@ export default function App() {
               </div>
             </div>
             <div className="header-right">
-              <span className="user-greeting">🇷🇼 {user.full_name.split(" ")[0]}</span>
+              <span className="user-greeting">
+                <img src="https://flagcdn.com/20x15/rw.png" alt="Rwanda" style={{marginRight: '6px', verticalAlign: 'middle'}} />
+                {user.full_name.split(" ")[0]}
+              </span>
               <button className="logout-btn" onClick={logout}>Sign Out</button>
             </div>
           </header>
