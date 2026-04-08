@@ -177,7 +177,7 @@ export default function App() {
               </div>
             </div>
             <div className="header-right">
-              <span className="user-greeting">🛡️ {user.full_name.split(" ")[0]}</span>
+              <span className="user-greeting">🇷🇼 {user.full_name.split(" ")[0]}</span>
               <button className="logout-btn" onClick={logout}>Sign Out</button>
             </div>
           </header>
